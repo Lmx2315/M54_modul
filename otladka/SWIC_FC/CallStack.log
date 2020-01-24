@@ -1,0 +1,1134 @@
+-----------------------------------------------
+B800A6EC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 750)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8008590: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 110)
+B80076A0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2267)
+B8001460: ...
+
+-----------------------------------------------
+B8008590: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 110)
+B80076C8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2272)
+B8001460: ...
+
+-----------------------------------------------
+B8008590: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 110)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008594: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 111)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B800859C: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 112)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008CF4: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008320: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 90)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008338: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 91)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008340: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 92)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B800834C: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 93)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008354: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 94)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B800836C: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 95)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008378: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 96)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B80083BC: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 97)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008404: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 98)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008444: or_MASKR(unsigned int, unsigned int, int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 99)
+B8008D00: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 318)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008D08: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 319)
+B80076E8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2276)
+B8001460: ...
+
+-----------------------------------------------
+B8008590: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 110)
+B8006FE0: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2115)
+B80076F0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2279)
+B8001460: ...
+
+-----------------------------------------------
+B8008594: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 111)
+B8006FE0: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2115)
+B80076F0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2279)
+B8001460: ...
+
+-----------------------------------------------
+B800859C: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 112)
+B8006FE0: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2115)
+B80076F0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2279)
+B8001460: ...
+
+-----------------------------------------------
+B8008E24: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 352)
+B8006FE0: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2115)
+B80076F0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2279)
+B8001460: ...
+
+-----------------------------------------------
+B8008E28: risc_enable_interrupt(RISC_INTERRUPT_TYPE) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 353)
+B8006FE0: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2115)
+B80076F0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2279)
+B8001460: ...
+
+-----------------------------------------------
+B800A6BC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6CC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 745)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6D0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 746)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6D8: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 747)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6E0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009740: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 634)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009750: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009768: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009794: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009794: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097C0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097C4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097EC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097EC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009814: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 641)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009840: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 642)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009870: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009874: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800989C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098A0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098C4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098F0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 646)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800991C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 647)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009948: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 648)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6A4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 740)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6BC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6CC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 745)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6D0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 746)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 747)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009740: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 634)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009750: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009768: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009790: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097BC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097E8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009814: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 641)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009840: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 642)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800986C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009898: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098C4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098F0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 646)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800991C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 647)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009948: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 648)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6A4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 740)
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80038BC: UART_conrol() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 1050)
+B80076F0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2286)
+B8001460: ...
+
+-----------------------------------------------
+B80039E8: UART_conrol() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 1064)
+B80076F0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2286)
+B8001460: ...
+
+-----------------------------------------------
+B80076F8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2288)
+B8001460: ...
+
+-----------------------------------------------
+B80038A4: UART_conrol() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 1047)
+FFFFFFF8: ...
+
+-----------------------------------------------
+B800A658: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A668: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 745)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A66C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 746)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A670: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 747)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A678: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80096DC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 634)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80096EC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009708: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800970C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009730: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009734: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800975C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800975C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009784: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097B0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 641)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097DC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 642)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009808: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009834: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009864: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009864: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800988C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 646)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098B8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 647)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098E4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 648)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A640: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 740)
+B800A680: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80096BC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A634: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098DC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 646)
+B800A6C0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098F8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 647)
+B800A6C0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009924: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 648)
+B800A6C0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A680: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 740)
+B800A6C0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800973C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A6C0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800973C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A6C0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800973C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A6C0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80039EC: UART_conrol() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 1064)
+B8007770: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2274)
+B8001460: ...
+
+-----------------------------------------------
+B8007804:  (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2279)
+B8001460: ...
+
+-----------------------------------------------
+B8007804:  (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2279)
+B8001460: ...
+
+-----------------------------------------------
+B8007804:  (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2280)
+B8001460: ...
+
+-----------------------------------------------
+B800A6D8: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009738: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 634)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009748: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009760: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009788: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097B4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097E0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800980C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 641)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009838: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 642)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009864: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009890: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098BC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098E8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 646)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009914: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 647)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009940: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 648)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A69C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 740)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6E4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6E8: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 750)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A9A8: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 804)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800AAA0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800AB04: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 819)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8003A04: UART_conrol() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 1065)
+B8007770: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2275)
+B8001460: ...
+
+-----------------------------------------------
+B800A6B8: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6BC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6C4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 745)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6C8: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 746)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6CC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 747)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A6D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009738: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 634)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009748: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009760: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009788: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097B4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097E0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800980C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 641)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009838: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 642)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009864: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009890: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098BC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098E8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 646)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009914: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 647)
+B800A6DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009738: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A684: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8007734: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2269)
+B8001460: ...
+
+-----------------------------------------------
+B80038B4: UART_conrol() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 1051)
+B80076F8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2267)
+B8001460: ...
+
+-----------------------------------------------
+B80039F0: UART_conrol() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 1065)
+B80076F8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2267)
+B8001460: ...
+
+-----------------------------------------------
+B800A63C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A64C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 745)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A650: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 746)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A654: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 747)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A65C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80096C0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 634)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80096D0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80096E8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009710: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800973C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009768: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009794: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 641)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097C0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 642)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097EC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009818: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009844: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009870: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 646)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800989C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 647)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098CC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 648)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098CC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 648)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A624: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 740)
+B800A664: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800770C: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2269)
+B8001460: ...
+
+-----------------------------------------------
+B80076FC: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2267)
+B8001460: ...
+
+-----------------------------------------------
+B8007734: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2271)
+B8001460: ...
+
+-----------------------------------------------
+B8002A64: get_rx_speed(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 812)
+B800729C: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2157)
+B80076A0: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2255)
+B8001460: ...
+
+-----------------------------------------------
+B800A6F8: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A708: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 745)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A70C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 746)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A710: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 747)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A718: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800977C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 634)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800978C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097A4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097CC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80097F8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009824: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009850: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 641)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800987C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 642)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098A8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098D4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009900: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A720: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80077FC: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2280)
+B8001460: ...
+
+-----------------------------------------------
+B800A7DC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A7E0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 750)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800AAA0: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 804)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800AB98: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800ABFC: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 819)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800984C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009858: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 637)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009880: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 638)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098AC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 639)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098D8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 640)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009904: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 641)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009930: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 642)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800995C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 643)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009988: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 644)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80099B4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 645)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80099E0: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 646)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009A0C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 647)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009A38: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 648)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A794: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 740)
+B800A7D4: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8007D88: swic_receiver_wait(int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\swic.c, 82)
+B80074BC: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2200)
+B8007878: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2283)
+B8001460: ...
+
+-----------------------------------------------
+B800A814: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A824: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 745)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A828: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 746)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A82C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 747)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A834: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009898: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 634)
+B800A83C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80098A8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 635)
+B800A83C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8009E10: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 669)
+B800A83C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A0E8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 688)
+B800A83C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A578: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 723)
+B800A83C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A59C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 724)
+B800A83C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A7FC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 740)
+B800A83C: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A844: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A848: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 750)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800AB08: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 804)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800AC00: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800AC64: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_runtime\risc_interrupt.c, 819)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_elvis\otladka\swic_fc\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B8003A4C: UART_conrol() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 1076)
+B80079AC: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2323)
+B8001460: ...
+
+-----------------------------------------------
+B80073C8: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2183)
+B8007914: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2312)
+B8001460: ...
+
+-----------------------------------------------
+B80073E4: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2183)
+B8007914: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2312)
+B8001460: ...
+
+-----------------------------------------------
+B80073CC: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2182)
+B80078F8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2311)
+B8001460: ...
+

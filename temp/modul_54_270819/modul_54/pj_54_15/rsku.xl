@@ -1,0 +1,30 @@
+OUTPUT_ARCH("mips:isa32")
+TARGET("elf32-littlemips")
+SECTIONS {
+ 
+ . =0xb8001000; 
+ .textI_text 0xb8000180 :
+  {
+    risc_interrupt_handler.*(.text);
+  }
+ 
+ . =0xb8001000; 
+ .text :
+  {
+    main.*(.text);
+    risc_runtime\\swic.*(.text);
+    risc_runtime\\system.*(.text);
+    risc_runtime\\risc_interrupt.*(.text);
+    DMA_Class.*(.text);
+  }
+ 
+ .data :
+  {
+    main.*(.data);
+    risc_runtime\\swic.*(.data);
+    risc_runtime\\system.*(.data);
+    risc_interrupt_handler.*(.data);
+    risc_runtime\\risc_interrupt.*(.data);
+    DMA_Class.*(.data);
+  }
+}

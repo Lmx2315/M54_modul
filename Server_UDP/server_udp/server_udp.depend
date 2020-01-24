@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1568971515 source:c:\work\project_m54\m54_elvis\server_udp\server_udp\main.cpp
+	<stdio.h>
+	<winsock2.h>
+	<windows.h>
+	<locale.h>
+

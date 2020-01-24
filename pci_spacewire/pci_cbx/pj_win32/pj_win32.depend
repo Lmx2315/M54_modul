@@ -1,0 +1,92 @@
+# depslib dependency file v1.0
+1514140582 source:c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\main.cpp
+	<tchar.h>
+	<windows.h>
+
+1563976649 source:c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\main.c
+	<Windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	"mcb_pci_driver.h"
+	"memory_manager.h"
+	"swic.h"
+
+1563869662 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\mcb_pci_driver.h
+
+1563351275 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\memory_manager.h
+	"mcb02.h"
+	"tinyalloc.h"
+	"common.h"
+	"mcb_pci_driver.h"
+	"swic.h"
+
+1562083029 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\mcb02.h
+
+1562929955 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\tinyalloc.h
+	<stdbool.h>
+	<stddef.h>
+	"mcb02.h"
+
+1562927645 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\common.h
+	"mcb_pci_driver.h"
+	"erlcommon.h"
+	<stdio.h>
+
+1540469953 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\erlcommon.h
+
+1562665535 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\swic.h
+	<stdio.h>
+	"erlcommon.h"
+	"mcb02.h"
+	"mcb_pci_driver.h"
+
+1562581535 source:c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\tinyalloc.c
+	"tinyalloc.h"
+	<stdint.h>
+
+1562927615 source:c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\common.c
+	"common.h"
+
+1563979661 source:c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\memory_manager.c
+	"memory_manager.h"
+
+1563977183 source:c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\swic.c
+	"swic.h"
+
+1563979703 source:c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\tests.c
+	"tests.h"
+
+1563800275 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\tests.h
+	"mcb02.h"
+	<stdlib.h>
+	<unistd.h>
+	<sys/time.h>
+	"mcb_pci_driver.h"
+	"swic.h"
+	"memory_manager.h"
+	"common.h"
+
+1563959436 source:c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\mcb_driver.c
+	<windows.h>
+	<tchar.h>
+	<strsafe.h>
+	<setupapi.h>
+	<stdio.h>
+	<stdlib.h>
+	<devguid.h>
+	<inttypes.h>
+	"mcb_pci_io.h"
+	"mcb_pci_public.h"
+	"mcb_pci_driver.h"
+	"mcb03.h"
+	"mcb02.h"
+
+1540469953 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\mcb_pci_io.h
+
+1540469953 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\mcb_pci_public.h
+
+1551082269 c:\work\project_m54\m54_elvis\pci_spacewire\pci_cbx\pj_win32\mcb03.h
+

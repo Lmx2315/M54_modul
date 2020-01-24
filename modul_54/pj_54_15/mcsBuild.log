@@ -1,0 +1,63 @@
+ 
+--------------- Dirs for GCC ----------------------
+Tool Dir: E:\MCStudio_3M_MC-30SF6\Tools4X\bin\
+SysInc Dir: E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\machine\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\sys\;
+SysLib Dir: E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\eb\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\soft-float\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\soft-float\eb\;
+Work Dir: c:\work\project_m54\m54_elvis\modul_54\pj_54_15\
+Project Dirs: c:\work\project_m54\m54_elvis\modul_54\pj_54_15\;c:\work\project_m54\m54_elvis\modul_54\pj_54_15\risc_runtime\;
+Include Dirs: 
+Library Dirs: 
+ 
+--------- Environment Variable for GCC  -----------
+PATH = c:\work\project_m54\m54_elvis\modul_54\pj_54_15\;c:\work\project_m54\m54_elvis\modul_54\pj_54_15\risc_runtime\;;E:\MCStudio_3M_MC-30SF6\Tools4x\bin;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\machine\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\sys\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\eb\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\soft-float\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\soft-float\eb\;c:\work\project_m54\m54_elvis\modul_54\pj_54_15\
+COMPILER_PATH = E:\MCStudio_3M_MC-30SF6\Tools4X\bin\;
+CPATH = E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\machine\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\sys\;risc_runtime\;
+C_INCLUDE_PATH = E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\machine\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\sys\;risc_runtime\;
+CPLUS_INCLUDE_PATH = E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\machine\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\include\sys\;risc_runtime\;
+LIBRARY_PATH = E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\eb\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\soft-float\;E:\MCStudio_3M_MC-30SF6\Tools4X\mipsel-elf32\lib\soft-float\eb\;risc_runtime\;
+---------------------------------------------------
+ 
+---------------  Dirs for CLang -------------------
+Tool Dir: E:\MCStudio_3M_MC-30SF6\CLang-tools\bin\
+SysInc Dir: E:\MCStudio_3M_MC-30SF6\CLang-tools\include\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\bits\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\machine\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\rpc\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\sanitizer\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\sys\;
+SysLib Dir: E:\MCStudio_3M_MC-30SF6\CLang-tools\lib\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\lib\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\lib\ldscripts\;
+Work Dir: c:\work\project_m54\m54_elvis\modul_54\pj_54_15\
+Project Dirs: c:\work\project_m54\m54_elvis\modul_54\pj_54_15\;c:\work\project_m54\m54_elvis\modul_54\pj_54_15\risc_runtime\;
+Include Dirs: 
+Library Dirs: 
+ 
+------------- Environment Variable for CLang ------
+PATH = c:\work\project_m54\m54_elvis\modul_54\pj_54_15\;c:\work\project_m54\m54_elvis\modul_54\pj_54_15\risc_runtime\;E:\MCStudio_3M_MC-30SF6\CLang-tools\bin\;E:\MCStudio_3M_MC-30SF6\CLang-tools\include\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\bits\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\machine\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\rpc\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\sanitizer\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\include\sys\;E:\MCStudio_3M_MC-30SF6\CLang-tools\lib\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\lib\;E:\MCStudio_3M_MC-30SF6\CLang-tools\elcore-elvis-elf\lib\ldscripts\;c:\work\project_m54\m54_elvis\modul_54\pj_54_15\
+COMPILER_PATH = E:\MCStudio_3M_MC-30SF6\CLang-tools\bin\;
+CPATH = risc_runtime\;
+C_INCLUDE_PATH = risc_runtime\;
+CPLUS_INCLUDE_PATH = risc_runtime\;
+LIBRARY_PATH = risc_runtime\;
+---------------------------------------------------
+28.11.2019 15:06:31
+Build project: c:\work\project_m54\m54_elvis\modul_54\pj_54_15\tfc11_swic.mcsproj
+Build Unit: rsku
+Set Environment Variable for GCC
+RISC File: mipsel-elf32-gcc -mips32 -EL -G0 -g -fno-delayed-branch -Wa,-O0 -Wa,--mc24r2 -c -I. -o main.o main.c
+Set Environment Variable for GCC
+RISC File: mipsel-elf32-gcc -mips32 -EL -G0 -g -fno-delayed-branch -Wa,-O0 -Wa,--mc24r2 -c -I. -o risc_runtime\swic.o risc_runtime\swic.c
+Set Environment Variable for GCC
+RISC File: mipsel-elf32-gcc -mips32 -EL -G0 -g -fno-delayed-branch -Wa,-O0 -Wa,--mc24r2 -c -I. -o risc_runtime\system.o risc_runtime\system.c
+Set Environment Variable for GCC
+RISC File: mipsel-elf32-gcc -mips32 -EL -G0 -g -fno-delayed-branch -Wa,-O0 -Wa,--mc24r2 -c -o risc_interrupt_handler.o  risc_interrupt_handler.s
+Set Environment Variable for GCC
+RISC File: mipsel-elf32-gcc -mips32 -EL -G0 -g -fno-delayed-branch -Wa,-O0 -Wa,--mc24r2 -c -I. -o risc_runtime\risc_interrupt.o risc_runtime\risc_interrupt.c
+Set Environment Variable for GCC
+RISC File: mipsel-elf32-gcc -mips32 -EL -G0 -g -fno-delayed-branch -Wa,-O0 -Wa,--mc24r2 -c -I. -o DMA_Class.o DMA_Class.c
+Set Environment Variable for GCC
+RISC Unit: mipsel-elf32-ld -EL -r -N -T rsku.xl   main.o  risc_runtime\swic.o  risc_runtime\system.o  risc_interrupt_handler.o  risc_runtime\risc_interrupt.o  DMA_Class.o  -o rsku
+Set Environment Variable for GCC
+Project: mipsel-elf32-gcc -g -EL -G0 -fno-delayed-branch -Wa,-O0 -Wa,--mc24r2 -T tfc11_swic_new.xl rsku  -o tfc11_swic.o
+Set Environment Variable for GCC
+Project: mipsel-elf32-objdump -s tfc11_swic.o
+Set Environment Variable for GCC
+Project: mipsel-elf32-objdump -x  tfc11_swic.o
+Set Environment Variable for GCC
+Project: mipsel-elf32-objdump --disassemble-all tfc11_swic.o
+28.11.2019 15:06:33
+----------------------------------------------------

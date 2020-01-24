@@ -1,0 +1,344 @@
+
+tfc11_swic.o:     file format elf32-littlemips
+tfc11_swic.o
+architecture: mips:isa32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0xb8001304
+
+Program Header:
+    LOAD off    0x00000000 vaddr 0xb8000000 paddr 0xb8000000 align 2**12
+         filesz 0x0000cbf4 memsz 0x0000fa6c flags rwx
+private flags = 50001001: [abi=O32] [mips32] [not 32bitmode] [noreorder]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .textI_text   0000018c  b8000180  b8000180  00000180  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text         0000a9e4  b8001000  b8001000  00001000  2**8
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .data         000005cc  b800b9e8  b800b9e8  0000b9e8  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .ctors        00000008  b800bfb4  b800bfb4  0000bfb4  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  4 .dtors        00000008  b800bfbc  b800bfbc  0000bfbc  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  5 .jcr          00000004  b800bfc4  b800bfc4  0000bfc4  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  6 .sdata        00000004  b800bfc8  b800bfc8  0000bfc8  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  7 .rodata       00000c20  b800bfcc  b800bfcc  0000bfcc  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 .eh_frame     00000004  b800cbec  b800cbec  0000cbec  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  9 .rodata.str1.4 00000004  b800cbf0  b800cbf0  0000cbf0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 10 .sbss         00000038  b800cbf8  b800cbf8  0000cbf4  2**2
+                  ALLOC
+ 11 .bss          00002e3c  b800cc30  b800cc30  0000cbf4  2**3
+                  ALLOC
+ 12 .pdr          00000e60  00000000  00000000  0000cbf4  2**2
+                  CONTENTS, READONLY
+ 13 .comment      00000011  00000000  00000000  0000da54  2**0
+                  CONTENTS, READONLY
+ 14 .gnu.attributes 00000010  00000000  00000000  0000da65  2**0
+                  CONTENTS, READONLY
+ 15 .debug_info   00002fee  00000000  00000000  0000da75  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_abbrev 000007a1  00000000  00000000  00010a63  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_loc    00001abc  00000000  00000000  00011204  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 18 .debug_aranges 000000c0  00000000  00000000  00012cc0  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 19 .debug_line   00001427  00000000  00000000  00012d80  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 20 .debug_str    00001b27  00000000  00000000  000141a7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 21 .debug_frame  00000e6c  00000000  00000000  00015cd0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+b8000180 l    d  .textI_text	00000000 .textI_text
+b8001000 l    d  .text	00000000 .text
+b800b9e8 l    d  .data	00000000 .data
+b800bfb4 l    d  .ctors	00000000 .ctors
+b800bfbc l    d  .dtors	00000000 .dtors
+b800bfc4 l    d  .jcr	00000000 .jcr
+b800bfc8 l    d  .sdata	00000000 .sdata
+b800bfcc l    d  .rodata	00000000 .rodata
+b800cbec l    d  .eh_frame	00000000 .eh_frame
+b800cbf0 l    d  .rodata.str1.4	00000000 .rodata.str1.4
+b800cbf8 l    d  .sbss	00000000 .sbss
+b800cc30 l    d  .bss	00000000 .bss
+00000000 l    d  .pdr	00000000 .pdr
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 risc_interrupt_handler.o
+b8000180 l       .textI_text	00000000 Interrupt
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 risc_runtime\swic.c
+00000000 l    df *ABS*	00000000 risc_runtime\system.c
+00000000 l    df *ABS*	00000000 risc_runtime\risc_interrupt.c
+b800858c l     F .text	0000013c or_MASKR
+b80086c8 l     F .text	00000120 andnot_MASKR
+b80099a0 l     F .text	00000f7c get_cause_risc
+00000000 l    df *ABS*	00000000 DMA_Class.c
+00000000 l    df *ABS*	00000000 
+00000000 l    df *ABS*	00000000 crtstuff.c
+b800bfb4 l     O .ctors	00000000 __CTOR_LIST__
+b800bfbc l     O .dtors	00000000 __DTOR_LIST__
+b800cbec l     O .eh_frame	00000000 __EH_FRAME_BEGIN__
+b800bfc4 l     O .jcr	00000000 __JCR_LIST__
+b8001000 l     F .text	00000000 deregister_tm_clones
+b8001040 l     F .text	00000000 register_tm_clones
+b800108c l     F .text	00000000 __do_global_dtors_aux
+b800cc30 l     O .bss	00000001 completed.3095
+b800cc34 l     O .bss	00000004 dtor_idx.3097
+b8001194 l     F .text	00000000 frame_dummy
+b800cc38 l     O .bss	00000018 object.3107
+00000000 l    df *ABS*	00000000 e:/mcstudio_3m_mc-30sf6/tools4x/bin/../lib/gcc/mipsel-elf32/4.8.1/../../../../mipsel-elf32/lib/crt0.o
+b80013b8 l     F .text	00000044 zerobss
+b80013fc l     F .text	00000078 init
+00000000 l    df *ABS*	00000000 crtstuff.c
+b800bfb8 l     O .ctors	00000000 __CTOR_END__
+b800cbec l     O .eh_frame	00000000 __FRAME_END__
+b800bfc4 l     O .jcr	00000000 __JCR_END__
+b800b16c l     F .text	00000000 __do_global_ctors_aux
+00000000 l    df *ABS*	00000000 atexit.c
+00000000 l    df *ABS*	00000000 atoi.c
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 impure.c
+b800bb98 l     O .data	00000418 impure_data
+00000000 l    df *ABS*	00000000 strcmp.c
+00000000 l    df *ABS*	00000000 strlen.c
+00000000 l    df *ABS*	00000000 strtol.c
+00000000 l    df *ABS*	00000000 __atexit.c
+00000000 l    df *ABS*	00000000 __call_atexit.c
+00000000 l    df *ABS*	00000000 ctype_.c
+b800ca6c l     O .rodata	00000180 _ctype_b
+00000000 l    df *ABS*	00000000 
+b80038d0 g     F .text	00000180 UART_conrol
+b800cbf8 g     O .sbss	00000004 DMA_RX_DESC
+b800ba2c g     O .data	00000164 risc_hnlr_func
+b800cd48 g     O .bss	000000c8 DATA_Word
+b80037c4 g     F .text	00000048 IER_UART
+b8005ff0 g     F .text	00000090 spi_1288_wr
+b80083e4 g     F .text	000001a8 risc_set_interrupts_vector
+b800cc59 g     O .bss	00000001 Adress
+b80045d0 g     F .text	000000b4 init_GPIO_DR3
+b80044c0 g     F .text	0000005c MFBSP3_init
+b800ba28 g     O .data	00000004 SPI_FRQ
+b80035b4 g     F .text	00000088 u_out
+b800b9ec g     O .data	00000004 ERR_PARAM
+b8001cf0 g     F .text	00000054 report_high
+b800cce0 g     O .bss	00000020 InputArray0
+b800b124 g     F .text	00000048 get_raw_addr
+b8002f2c g     F .text	00000130 reverse
+b800ce10 g     O .bss	00001000 lport_InputArray
+b80032d0 g     F .text	000000c0 UART1_conf
+b800bfc0 g       .data	00000000 _gp
+b800cca0 g     O .bss	00000020 OutputArray0
+b80027d8 g     F .text	000001a0 get_status
+b8004684 g     F .text	00000044 GPIO_conf
+b8007abc g     F .text	00000074 IsConnected
+b8003a50 g     F .text	00000094 leng
+b800bfc8 g     O .sdata	00000000 .hidden __TMC_END__
+b8002aa8 g     F .text	00000074 check_SpW_link_status_run
+b800bfc0 g     O .dtors	00000000 .hidden __DTOR_END__
+b800b9f8 g     O .data	00000004 TX_DATA_LENGTH
+b800cc85 g     O .bss	00000001 FLAG_CW
+b800cc65 g     O .bss	00000001 packet_ok
+b800cbfc g     O .sbss	00000004 tmp_read
+b800cc00 g     O .sbss	00000001 Readed_value
+b80087e8 g     F .text	000008f4 risc_enable_interrupt
+00000000  w      *UND*	00000000 malloc
+b800cc04 g     O .sbss	00000004 sch
+b800ba04 g     O .data	00000004 SPW_SPEED_MAX
+b800cc08 g     O .sbss	00000002 text_lengh
+b800cd24 g     O .bss	00000004 crc_input
+b800cc30 g       .bss	00000000 _bss_start
+b80047d4 g     F .text	00000094 adc2_init
+b8003734 g     F .text	00000090 ZeroArray
+b800cd00 g     O .bss	00000020 InputArray1
+b800451c g     F .text	000000b4 init_GPIO_DR2
+b8007bf0 g     F .text	0000021c swic_send_packet
+b800bfc8 g     O .sdata	00000000 .hidden __dso_handle
+b800305c g     F .text	00000190 itoa
+b800cc5a g     O .bss	00000002 lenght
+b8009924 g     F .text	0000007c risc_register_interrupt
+b800cc88 g     O .bss	00000004 time_uart
+b8004b28 g     F .text	00001284 IO
+b800810c g     F .text	00000090 sys_kernel_pa_to_va
+b800de10 g     O .bss	00000020 Word
+b800ccc0 g     O .bss	00000020 OutputArray1
+b800cc58 g     O .bss	00000001 Master_flag
+b800ad8c g     F .text	0000003c assign_dma_rx_desc
+b8001d44 g     F .text	00000064 unmask_irq
+b800de30 g     O .bss	00000400 text_buffer
+b800b9f4 g     O .data	00000004 REPORT_EN
+b800c964 g     O .rodata	00000004 _global_impure_ptr
+b800a91c g     F .text	00000470 risc_common_handler
+b8005e04 g     F .text	00000074 ID0_init
+b8001ec0 g     F .text	000000b4 gspwr_form_adg
+b8003d80 g     F .text	0000029c AT2
+b800ba10 g     O .data	00000004 Flag_Corr
+b800b964 g     F .text	00000000 _init
+b800ba18 g     O .data	00000004 SWIC_Number
+b800cd28 g     O .bss	00000004 crc_comp
+b80034bc g     F .text	00000068 UART_receiveByte
+b800b584 g     F .text	00000030 strtol
+b8003524 g     F .text	00000090 Transf
+b8004118 g     F .text	00000034 SetCP0_Status
+b800b9f0 g     O .data	00000004 PRINT_EN
+b800cc64 g     O .bss	00000001 crc_ok
+b800e230 g     O .bss	00000688 DSP
+b800cc68 g     O .bss	00000004 indexZ
+b800cc60 g     O .bss	00000004 index1
+b800cc70 g     O .bss	00000004 index_data_word
+b800432c g     F .text	0000013c MFBSP1_init
+b800cc7c g     O .bss	00000001 data_flag
+b8002b1c g     F .text	0000018c turn_off
+b800cc80 g     O .bss	00000004 sch_lenght_data
+b800256c g     F .text	00000078 set_dma_enabled
+b800cc0c g     O .sbss	00000004 rx_wr_index0
+b800b9e8 g     O .data	00000004 main_scale
+b800cd38 g     O .bss	00000008 txDescr0
+b8003450 g     F .text	0000006c UART_sendByte
+00000000  w      *UND*	00000000 __deregister_frame_info
+b80082e8 g     F .text	0000007c get_dsp_clock
+b8003390 g     F .text	000000c0 UART0_conf
+b800b20c g     F .text	00000018 _atoi_r
+b80036bc g     F .text	00000078 un_out
+00000000  w      *UND*	00000000 _ITM_registerTMCloneTable
+b800ba14 g     O .data	00000004 SWIC_Speed
+b800ae04 g     F .text	0000003c assign_dma_tx_desc
+b80098d8 g     F .text	0000004c risc_enable_interrupts
+b8002978 g     F .text	000000dc wait_link_status
+b8006234 g     F .text	00000e08 dsp_1288hk1t_init
+b800cc94 g     O .bss	00000004 Flag_Disconnect
+b800e8b8 g     O .bss	00000040 rx_buffer0
+b8002ca8 g     F .text	000000b4 FillArray
+b800380c g     F .text	000000c4 getchar0
+b800b718 g     F .text	0000024c __call_exitprocs
+b800414c g     F .text	00000024 TR_CRAM_set
+b800401c g     F .text	000000fc MFBSP0_init
+b8001304 g     F .text	000000b4 _start
+b800ba24 g     O .data	00000004 ROUTING_TABLE
+b800ae40 g     F .text	0000003c assign_dma_tx_data
+b8002690 g     F .text	00000148 start_connect
+b800b5b4 g     F .text	00000164 __register_exitproc
+b8002ea0 g     F .text	0000004c timer_hnlr
+b800cc10 g     O .sbss	00000004 DMA_RX_DATA
+b800e8f8 g     O .bss	000000c8 DATA_Word2
+b80090dc g     F .text	000007ac risc_disable_interrupt
+b800b00c g     F .text	00000054 wait_not_run
+b800cc6c g     O .bss	00000004 index_word
+b800cc5c g     O .bss	00000002 SCH_LENGHT_PACKET
+b800cd30 g     O .bss	00000004 SYS_timer1
+b8005e78 g     F .text	000000e4 ID0_IT_handler
+b800ba20 g     O .data	00000004 PMA_TEST_CSR
+b800cc14 g     O .sbss	00000004 DMA_TX_DATA
+b8001f74 g     F .text	000004a4 set_transmit_speed
+b800cc18 g     O .sbss	00000001 rx_buffer_overflow0
+b8005dac g     F .text	00000058 Delay_ms
+b800e9c0 g     O .bss	00000041 InOut
+00000000  w      *UND*	00000000 _ITM_deregisterTMCloneTable
+b8001500 g     F .text	000007c8 INIT_REG_DSP
+b8009888 g     F .text	00000050 risc_disable_interrupts
+b800774c g     F .text	00000254 main
+00000000       O *UND*	00000000 int_return
+b800cc54 g     O .bss	00000004 led_tick
+b800b350 g     F .text	00000234 _strtol_r
+b800cd2c g     O .bss	00000004 SYS_timer0
+b800703c g     F .text	00000468 SW_init
+b800cc50 g     O .bss	00000001 lsr
+b800819c g     F .text	000000d4 sys_kernel_va_to_pa
+b8002d5c g     F .text	00000144 VerifyArray
+b8002a54 g     F .text	00000054 get_rx_speed
+b800b288 g     F .text	000000a0 strcmp
+b800cc66 g     O .bss	00000001 packet_flag
+b80024f0 g     F .text	0000007c make_desc
+b8007a6c g     F .text	00000050 InitSwic
+b8007e0c g     F .text	000000c8 swic_receiver_wait
+b80031ec g     F .text	000000e4 itox
+b800b9a0 g     F .text	00000000 _fini
+b800cc8c g     O .bss	00000004 PLL_CTR
+b800cc98 g     O .bss	00000004 errors
+b8008270 g     F .text	00000078 get_cpu_clock
+b800ae7c g     F .text	00000140 configure_wn
+b800ea08 g     O .bss	00001000 lport_OutputArray
+b800b1d4 g     F .text	00000020 atexit
+b800ba0c g     O .data	00000004 SPW_SPEC_CABLE_PORTS
+b800cd20 g     O .bss	00000004 flag_DMA_LPORT
+b800cc1c g     O .sbss	00000004 DMA_TX_DESC
+b8003ae4 g     F .text	0000029c AT1
+b8002418 g     F .text	000000d8 set_recive_speed
+b80041b8 g     F .text	0000008c ID1_LPORT_handler
+b8004868 g     F .text	000002c0 Menu1
+b800bb90 g     O .data	00000004 _impure_ptr
+b800ba00 g     O .data	00000004 SPW_SPEED_STEP
+00000000  w      *UND*	00000000 __get_elcore_argv
+b800cc20 g     O .sbss	00000004 speed
+b8004244 g     F .text	000000e8 int_handler
+b8007ed4 g     F .text	0000010c swic_receiver_run
+b8004170 g     F .text	00000048 MASKR2_set
+b8001cc8 g     F .text	00000028 defrag_REG_DSP
+b800afbc g     F .text	00000050 is_run
+b800adc8 g     F .text	0000003c assign_dma_rx_data
+b800cd40 g     O .bss	00000008 txDescr1
+b8017a70 g     O .bss	00000000 __stack
+b80046c8 g     F .text	00000078 LED
+b8007fe0 g     F .text	0000012c swic_receive_packet
+b800cc51 g     O .bss	00000001 lk
+b80079a0 g     F .text	000000cc ClearSwic
+b800cbf8 g       .sbss	00000000 _edata
+b8017a7c g       .bss	00000000 _end
+b800cc24 g     O .sbss	00000004 rx_rd_index0
+b8006080 g     F .text	00000090 spi_1288_rd
+b800b0a8 g     F .text	0000007c start_wn
+b8006110 g     F .text	00000124 SPI_init
+b800cc90 g     O .bss	00000004 Flag_Timeout
+b800b224 g     F .text	00000064 exit
+b8001e08 g     F .text	000000b8 form_routing_table
+b800cc7e g     O .bss	00000001 FLAG_lenght
+b800bfb0 g     O .data	00000004 __ctype_ptr__
+b800cc84 g     O .bss	00000001 FLAG_DATA
+b80074a4 g     F .text	000002a8 sw_data_obmen
+b800b060 g     F .text	00000048 start
+b800cc7d g     O .bss	00000001 data_flag2
+b800b1f4 g     F .text	00000018 atoi
+b800c968 g     O .rodata	00000101 _ctype_
+b800363c g     F .text	00000080 x_out
+b800cd34 g     O .bss	00000004 Dtimer0
+b8004740 g     F .text	00000094 adc1_init
+b8004468 g     F .text	00000058 MFBSP2_init
+b8005f5c g     F .text	00000094 spi
+b8001474 g     F .text	00000034 _exit
+b800cc78 g     O .bss	00000004 lenght_data
+b800b9fc g     O .data	00000004 SPW_SPEED_MIN
+b8008364 g     F .text	00000080 initialize_risc_hnlr
+b800b328 g     F .text	00000028 strlen
+b8007b30 g     F .text	000000c0 SetSwicSpeed
+b800fa08 g     O .bss	00000041 sr
+00000000  w      *UND*	00000000 __init_elcore_environ
+b800fa4c g     O .bss	00000020 strng
+00000000  w      *UND*	00000000 _Jv_RegisterClasses
+b8001da8 g     F .text	00000060 mask_irq
+b800cc74 g     O .bss	00000004 index_data_word2
+b80025e4 g     F .text	000000ac set_work_enabled
+b800cbf8 g       .sbss	00000000 _fbss
+b800cc28 g     O .sbss	00000001 flag_pachka_TXT
+00000000  w      *UND*	00000000 __register_frame_info
+b800ba08 g     O .data	00000004 GSPW_SPEED_SCALE
+b800ba1c g     O .data	00000004 REGS
+00000000  w      *UND*	00000000 free
+b8002eec g     F .text	00000040 dc_hnlr
+b800cc2c g     O .sbss	00000004 rx_counter0
+
+

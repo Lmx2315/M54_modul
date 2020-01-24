@@ -1,0 +1,5 @@
+Unit, Type, File, Fsec, Padr, Psec
+$, RISC, main.s, text, 0xbfc00000, text, 
+$, RISC, _utils.s, text, 0xbfc00000, text, 
+$, RISC, main.s, data, 0xbfc00000, data, 
+$, RISC, _utils.s, data, 0xbfc00000, data, 

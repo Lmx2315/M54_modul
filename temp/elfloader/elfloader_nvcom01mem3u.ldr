@@ -1,0 +1,4 @@
+Version = 00.01
+Entry Point = 0xBFC00000
+[Sections]
+Section0 = text.bin,bfc00000
