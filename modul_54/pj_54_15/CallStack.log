@@ -20,3 +20,290 @@ B8005F08: IO(char*) (c:\work\project_m54\m54_elvis\modul_54\pj_54_15\main.c, 189
 B80084C8: main() (c:\work\project_m54\m54_elvis\modul_54\pj_54_15\main.c, 2830)
 B8001460: ...
 
+-----------------------------------------------
+B800BBF4: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 819)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B754: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 744)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B764: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 745)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B76C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 747)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B774: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A7D8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 634)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A7E8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 635)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A800: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 637)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A828: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 638)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A854: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 639)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A880: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 640)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A8AC: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 641)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A8D8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 642)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A904: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 643)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A930: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 644)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A95C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 645)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A988: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 646)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B73C: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 740)
+B800B77C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B784: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B788: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 750)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BA48: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 804)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB40: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BBA4: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 819)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A994: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 644)
+B800B7C8: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A9A8: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 645)
+B800B7C8: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800A9D4: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 646)
+B800B7C8: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B788: get_cause_risc(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 740)
+B800B7C8: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B7D0: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 748)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800B7D4: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 750)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BA94: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 804)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB8C: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BBF0: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 819)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB28: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB28: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB28: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB28: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB28: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB74: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB74: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB74: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B800BB74: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_runtime\risc_interrupt.c, 815)
+B8000204: risc_common_handler() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\risc_interrupt_handler.s, 44)
+
+-----------------------------------------------
+B80033F4: get_rx_speed(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 940)
+B8007B44: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2508)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8008470: main() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2831)
+B8001460: ...
+
+-----------------------------------------------
+B80033FC: get_rx_speed(unsigned int) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 940)
+B8007B44: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2508)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8007C8C: SW_init() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2531)
+B8005F08: IO(char*) (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 1895)
+B8008470: main() (c:\work\project_m54\m54_modul\modul_54\pj_54_15\main.c, 2831)
+B8001460: ...
+

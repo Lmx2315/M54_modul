@@ -64,6 +64,9 @@
 #define P3LDAT4_0 init_GPIO_DR3(0x10,RESET)
 #define P3LDAT4_1 init_GPIO_DR3(0x10,  SET)
 
+#define P3LDAT5_0 init_GPIO_DR3(0x20,RESET)
+#define P3LDAT5_1 init_GPIO_DR3(0x20,  SET)
+
 #define P3LDAT6_0 init_GPIO_DR3(0x40,RESET)
 #define P3LDAT6_1 init_GPIO_DR3(0x40,  SET)
 
@@ -74,8 +77,7 @@
 #define TST2(a)     ((a==1)?P2LDAT0_1:P2LDAT0_0)
 #define A2_CSB(a)   ((a==1)?P2LDAT1_1:P2LDAT1_0)
 
-#define P3LDAT5_0 init_GPIO_DR3(0x20,RESET)
-#define P3LDAT5_1 init_GPIO_DR3(0x20,  SET)
+
 //#define A2_SO(a)    ((a==1)?P2LDAT2_1:P2LDAT2_0)
 #define A2_SPLIN(a) ((a==1)?P2LDAT3_1:P2LDAT3_0)
 #define A2_PWRDN(a) ((a==1)?P2LDAT4_1:P2LDAT4_0)
@@ -87,11 +89,11 @@
 
 #define TST1(a)     ((a==1)?P3LDAT0_1:P3LDAT0_0)
 #define A1_CSB(a)   ((a==1)?P3LDAT1_1:P3LDAT1_0)
-//#define A1_SO(a)    ((a==1)?P3LDAT2_1:P3LDAT2_0)
 #define A1_SPLIN(a) ((a==1)?P3LDAT3_1:P3LDAT3_0)
 #define A1_PWRDN(a) ((a==1)?P3LDAT4_1:P3LDAT4_0)
 
 #define RST_1288(a) ((a==1)?P3LDAT7_1:P3LDAT7_0)
+#define IPWOFF(a)   ((a==1)?P3LDAT6_1:P3LDAT6_0)
 
 char Readed_value;
 unsigned int tmp_read;
@@ -309,6 +311,7 @@ void lPORT_DMA (void);
 void UART_conrol (void);
 void SETUP (void);
 void freq_func (reg_1288 *,u32);
+void init_GPIO_DR3 (u16 ,u8 );
 //void dsp_1288hk1t_reg (void);
 //------------------------------------------
 #define FREQ 140000000  //частота CPU
@@ -1120,9 +1123,11 @@ char UART_receiveByte() {
 
  void Transf(const char *Str)
  {
+	 IPWOFF(1);
        while (*Str != 0)
           UART_sendByte(*Str++);
-	  UART_conrol ();
+	//  UART_conrol ();
+	IPWOFF(0);
  }
 
   void tx_uart(const char *Str,u16 n)
@@ -1590,8 +1595,8 @@ u16 l=0;
 				(0<< 4)|//Ќаправление вывода MISO:0 Ц MISO Ц вход (последовательные данные принимаютс€ со входа MISO - эквивалент SDI)
 				(1<< 5)|//Ќаправление вывода MOSI:1 Ц MOSI - выход (MOSI Ц €вл€етс€ выходом дл€ передачи последовательных данных и €вл€етс€ эквивалентом SDO)
 				(1<< 6)|//PWRDWN_A1
-				(0<< 7)|//NA
-				(0<< 8)|//NA
+				(1<< 7)|//CONTROL
+				(1<< 8)|//IPWOFF - используетс€ дл€ управлени€ 485 драйвером
 				(1<< 9);//RST_1288
 
 
@@ -1653,7 +1658,6 @@ void init_GPIO_DR3 (u16 a,u8 z)
  void LED(u8 a)
 {
 //	if ((a&0x01)==1) TST1(1); else TST1(0);
-
 } //LED_on
 
 void adc1_init (u8 a)
@@ -2772,8 +2776,6 @@ char readed;
    MFBSP2_init();//режим порта SPI + ввода-вывода общего назначени€
    MFBSP3_init();//режим порта SPI + ввода-вывода общего назначени€
    SPI_init();
-// GPIO_conf();
-   LED(temp_z0);
 
 adc1_init (0);
 adc2_init (0);
@@ -2843,6 +2845,10 @@ N_col=ARRAY_LEN;
 
 Delay_ms(1000);
 IO("~0 adc:1;");
+
+ //  LED(1);
+  
+  
 
  while (1)
   {
