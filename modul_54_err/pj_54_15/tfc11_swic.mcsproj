@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="windows-1251"?>
-<MCStudioProject><Project name="tfc11_swic" state="2"><Unit name="rsku" state="3"><File name="main.c" state="4"/><File name="risc_runtime\swic.c" state="4"/><File name="risc_runtime\system.c" state="4"/><File name="risc_interrupt_handler.s" state="4"/><File name="risc_runtime\risc_interrupt.c" state="4"/><File name="DMA_Class.c" state="4"/></Unit></Project></MCStudioProject>
