@@ -1,0 +1,14 @@
+Version = 00.01
+Entry Point = 0xB8001304
+[Sections]
+Section0 = textI_text.bin,b8000180
+Section1 = text.bin,b8001000
+Section2 = data.bin,b800c968
+Section3 = ctors.bin,b800cf34
+Section4 = dtors.bin,b800cf3c
+Section5 = jcr.bin,b800cf44
+Section6 = sdata.bin,b800cf48
+Section7 = rodata.bin,b800cf4c
+Section8 = eh_frame.bin,b800d760
+Section9 = rodata.str1.4.bin,b800d78c
+Section10 = xyram_array.bin,b8400000
