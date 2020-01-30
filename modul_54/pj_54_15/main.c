@@ -178,6 +178,7 @@ int SCH_SW=0;
 int FLAG_TEST=0;
 int UART_TIMER=0;
 
+u8 CHN=0;
 
 u32 sch_event=0;
 u32 FLAG_SW_START=0;
@@ -186,14 +187,14 @@ unsigned int Flag_Timeout = 0;
 unsigned int Flag_Corr = 1; // флаг корректности работы теста (0 - корректно, 1 - не корректно)
 unsigned int Flag_Disconnect = 0;
 
-volatile unsigned int SWIC_Speed = 20;//1 - 5 Mбит , 2 - 10 ћбит,8 - 40 ћбит,40 - 200 ћбит, 0x50 - 400 ћбит/с
+volatile unsigned int SWIC_Speed = 10;//1 - 5 Mбит , 2 - 10 ћбит,8 - 40 ћбит,40 - 200 ћбит, 0x50 - 400 ћбит/с
 unsigned  int speed;
 unsigned  int SWIC_Number = 5;
 int errors=0;
 int FLAG_STATUS_SPACEWIRE=0;
 
 // длина массива в 32-разр€дных словах
-#define ARRAY_LEN_lport 12000
+#define ARRAY_LEN_lport 20000
 
 // јдреса массивов должны быть выравнены по границе 64-разр€дного слова,
 // если они будут пересылатьс€ по DMA
@@ -201,9 +202,9 @@ int FLAG_STATUS_SPACEWIRE=0;
 //unsigned int lport_InputArray[ARRAY_LEN_lport] __attribute__ ((aligned (8)));
   unsigned int lport_InputArray[ARRAY_LEN_lport] __attribute__ ((section (".xyram_array")));
 
-#define  ARRAY_LEN 8192
-//unsigned int OutputArray0[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
-//unsigned int OutputArray1[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
+#define  ARRAY_LEN 4096
+  unsigned int OutputArray0[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
+  unsigned int OutputArray1[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
 //unsigned int OutputArray0[ARRAY_LEN] __attribute__ ((section (".xyram_array")));
 //unsigned int OutputArray1[ARRAY_LEN] __attribute__ ((section (".xyram_array")));
 
@@ -2002,6 +2003,14 @@ if (strcmp(Word,"spi_r")==0) //
 	u_out ("прин€л spi_r:",crc_comp);
 	x_out(">",spi_1288_rd (crc_comp));
    }
+else
+
+if (strcmp(Word,"ch")==0) //
+   {
+	crc_comp =atoi(DATA_Word);  //адресс
+	u_out ("прин€л ch:",crc_comp);
+	CHN=crc_comp;
+   }
 }
       for (i=0u;i<buf_Word;i++)               Word[i]     =0x0;
       for (i=0u;i<buf_DATA_Word;  i++)   DATA_Word[i]     =0x0;
@@ -2500,13 +2509,13 @@ void SW_init (void)
 
   // ќжидание соединени€
 Transf("wait spaceware\r\n");
-Delay_ms(100);
+Delay_ms(300);
 
   int port_i;
-  for (port_i = port_spw0; port_i <= port_spw1; port_i++)
+  for (port_i = port_spw1; port_i <= port_spw0; port_i--)
      if (SPW_SPEC_CABLE_PORTS & (1 << port_i))
         {
-			wait_link_status(port_i, link_status_run, 1000);
+			wait_link_status(port_i, link_status_run, 5000);
         }
 
   if (get_status(port_spw0,true)==link_status_run) Transf("Link0:established\r\n");
@@ -2522,7 +2531,7 @@ Transf("stage 1\r\n");
       if (SPW_SPEC_CABLE_PORTS & (1 << port_i))
           set_transmit_speed(port_i, speed, true);
 
-Delay_ms(100);
+Delay_ms(200);
 
 Transf("stage 2\r\n");
   //,# ќжидание разгона PLL
@@ -2532,7 +2541,7 @@ Transf("stage 2\r\n");
 		   SYS_timer1=0;
           while (get_rx_speed(port_i) < speed - 3)
 		  {
-			 if (SYS_timer1>1000) {Transf("ERROR SPEED wait!!!\r\n");break;} 
+			 if (SYS_timer1>2000) {Transf("ERROR SPEED wait!!!\r\n");break;} 
 		  };
          //,# ѕроверка, что соединение не разорвалось
          errors += check_SpW_link_status_run((GIGASPWR_cl*)0, port_i);
@@ -2568,20 +2577,19 @@ u32 sw_data_obmen (u32 a)
   u32 var=0;
   u32 *next;
   
-  next=lport_InputArray+1200;//указатель на продолжение массива
+//next=lport_InputArray+1023;//указатель на продолжение массива
 //next=lport_InputArray;//указатель на продолжение массива
 
- MASKR0_set();
+  MASKR0_set();
 
 // swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
 // swic_receiver_run(route_mask_spw1, InputArray1, descr1, 0xFFFF);
 
-  if (a==0) swic_send_packet(route_mask_spw0, next     , size, 1);
-//if (a==1) swic_send_packet(route_mask_spw0, next 	   , size, 1);
+if (a==0) swic_send_packet(route_mask_spw1, OutputArray0    , size, 1);
+if (a==1) swic_send_packet(route_mask_spw1, OutputArray1    , size, 1);
 
 //swic_receiver_wait(1);
 //swic_receiver_wait(0);
-
 
  if ((get_status(port_spw0,false)!=link_status_run)||
      (get_status(port_spw1,false)!=link_status_run))
@@ -2877,8 +2885,6 @@ Transf("--------------\r\n");
 	tx_uart();
 	
 	if (UART_TIMER>100) IPWOFF(0);//слушаем RS485
-	
-//	if (SYS_timer2>1000) {SYS_timer2=0;Transf("+");}
 
 	if (flag_DMA_LPORT>0)
 	{		
@@ -2894,45 +2900,38 @@ Transf("--------------\r\n");
 		FLAG_SW_INT_DES=0;
 		FLAG_SW_START=1;
 		sch_event++;
+		 Delay_ms(100);
 		if (SCH_SW==2)	{lPORT_DMA ();}
 	}
 	
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(FLAG_DATA_PREP==0))
 	{
+		
 		for (i=0;i<N_col;i++)
 		 {			
 			if (FLAG_TEST==1)
 			{
-			//		OutputArray0	[i] =(test_sin(2*i)<<16)+test_cos(2*i);	
-			//		OutputArray1    [i] =(0xffff&test_sin(2*i));
-			//		lport_InputArray[i] =(0xffff&test_sin(2*i));
-			
+					OutputArray0	[i] =(test_sin(2*i)<<16)+test_cos(2*i);	
+					OutputArray1    [i] =(0xffff&test_sin(2*i));			
 			} else
 			{
-				/*
 					v1=2*i+1023;
 					v2=2*i+1024;
 					    OutputArray0[i] =lport_InputArray[v1];	
-				//		OutputArray1[i] =lport_InputArray[v2];
-					lport_InputArray[i] =lport_InputArray[v2];
-				*/
-				//	lport_InputArray[0] =0xdeedbeef;
-				//	if (i&0x1) lport_InputArray[i] =0xf0000000+i;
-				//	else 	   lport_InputArray[i] =0xf0000000+i;
+						OutputArray1[i] =lport_InputArray[v2];
+				//	lport_InputArray[i] =lport_InputArray[v2];
+			}				
+		 }
 
-			}			
-		 }	
 		 FLAG_DATA_PREP=1; 	 
 	}
 
 
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(FLAG_SW_START==1)&&(FLAG_DATA_PREP==1)&&(SCH_SW<2))//
 	{
-	    sw_data_obmen(SCH_SW);//SCH_SW
-//		SCH_SW++;
+	    sw_data_obmen(CHN);//SCH_SW
 		SCH_SW=2;
 		FLAG_SW_START =0;
-	//	if (SCH_SW==2)	{lPORT_DMA ();}
 	}
 
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(flag_SW_UP==0))
