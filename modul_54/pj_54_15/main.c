@@ -2911,8 +2911,11 @@ Transf("--------------\r\n");
 		 {			
 			if (FLAG_TEST==1)
 			{
-					OutputArray0	[i] =(test_sin(2*i)<<16)+test_cos(2*i);	
-					OutputArray1    [i] =(0xffff&test_sin(2*i));			
+		//			OutputArray0	[i] =(test_sin(2*i)<<16)+test_cos(2*i);	
+		//			OutputArray1    [i] =(0xffff&test_sin(2*i));	
+
+					OutputArray0	[i] =(0xaaaa0000)+(sch_event&0xffff);	
+					OutputArray1    [i] =(0xbbbb0000)+(sch_event&0xffff);
 			} else
 			{
 					v1=2*i+1023;
