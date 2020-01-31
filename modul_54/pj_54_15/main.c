@@ -2585,7 +2585,7 @@ u32 sw_data_obmen (u32 a)
 // swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
 // swic_receiver_run(route_mask_spw1, InputArray1, descr1, 0xFFFF);
 
-if (a==0) swic_send_packet(route_mask_spw1, OutputArray0    , size, 1);
+if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
 if (a==1) swic_send_packet(route_mask_spw1, OutputArray1    , size, 1);
 
 //swic_receiver_wait(1);
@@ -2805,9 +2805,6 @@ char readed;
    MFBSP3_init();//режим порта SPI + ввода-вывода общего назначения
    SPI_init();
 
-adc1_init (0);
-adc2_init (0);
-
 
  Transf("----------------------\n\r");
  Transf("-       START        -\n\r");
@@ -2819,6 +2816,8 @@ adc2_init (0);
  rx_rd_index0=0;
  rx_wr_index0=0;
  rx_buffer_overflow0=0;
+ 
+
 
 //-------------сброс аттенюаторов----------------------
 AT1(0); //
@@ -2852,6 +2851,11 @@ AT2(0);
 
 //inc=RX_MFBSP1;//принудительно вычитываю данные из буфера lPORT
 //inc=RX_MFBSP1;//принудительно вычитываю данные из буфера lPORT
+
+Delay_ms(100); 
+adc2_init (0);
+Delay_ms(100);
+adc1_init (0);
 
 Delay_ms(100);
 SETUP ();
@@ -2911,11 +2915,11 @@ Transf("--------------\r\n");
 		 {			
 			if (FLAG_TEST==1)
 			{
-		//			OutputArray0	[i] =(test_sin(2*i)<<16)+test_cos(2*i);	
-		//			OutputArray1    [i] =(0xffff&test_sin(2*i));	
+					OutputArray0	[i] =(test_sin(2*i+sch_event)<<16)+test_cos(2*i+sch_event);	
+					OutputArray1    [i] =(0xffff&test_sin(2*i+sch_event));	
 
-					OutputArray0	[i] =(0xaaaa0000)+(sch_event&0xffff);	
-					OutputArray1    [i] =(0xbbbb0000)+(sch_event&0xffff);
+		//			OutputArray0	[i] =(0xaaaa0000)+(sch_event&0xffff);	
+		//			OutputArray1    [i] =(0xbbbb0000)+(sch_event&0xffff);
 			} else
 			{
 					v1=2*i+1023;
@@ -2932,8 +2936,8 @@ Transf("--------------\r\n");
 
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(FLAG_SW_START==1)&&(FLAG_DATA_PREP==1)&&(SCH_SW<2))//
 	{
-	    sw_data_obmen(CHN);//SCH_SW
-		SCH_SW=2;
+	    sw_data_obmen(SCH_SW);//CHN SCH_SW
+		SCH_SW++;
 		FLAG_SW_START =0;
 	}
 
