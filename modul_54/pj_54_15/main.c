@@ -179,6 +179,7 @@ int FLAG_TEST=0;
 int UART_TIMER=0;
 
 u8 CHN=0;
+u8 Even_check=0;
 
 u32 sch_event=0;
 u32 FLAG_SW_START=0;
@@ -202,7 +203,7 @@ int FLAG_STATUS_SPACEWIRE=0;
 //unsigned int lport_InputArray[ARRAY_LEN_lport] __attribute__ ((aligned (8)));
   unsigned int lport_InputArray[ARRAY_LEN_lport] __attribute__ ((section (".xyram_array")));
 
-#define  ARRAY_LEN 4096
+#define  ARRAY_LEN 2048
   unsigned int OutputArray0[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
   unsigned int OutputArray1[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
 //unsigned int OutputArray0[ARRAY_LEN] __attribute__ ((section (".xyram_array")));
@@ -2588,8 +2589,11 @@ u32 sw_data_obmen (u32 a)
 //if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
 //if (a==1) swic_send_packet(route_mask_spw1, OutputArray1    , size, 1);
 
-if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
-if (a==1) swic_send_packet(route_mask_spw0, OutputArray1    , size, 1);
+	if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
+	if (a==1) swic_send_packet(route_mask_spw0, OutputArray1    , size, 1);	
+	
+	if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
+	if (a==1) swic_send_packet(route_mask_spw0, OutputArray1    , size, 1);	
 
 //swic_receiver_wait(1);
 //swic_receiver_wait(0);
@@ -2941,8 +2945,17 @@ Transf("--------------\r\n");
 			{
 					v1=2*i+1023;
 					v2=2*i+1024;
-					    OutputArray0[i] =lport_InputArray[v1];	
+					if (i!=0)
+					{
+						OutputArray0[i] =lport_InputArray[v1];	
 						OutputArray1[i] =lport_InputArray[v2];
+					}else
+					{
+						OutputArray0[i] =0xabcdef99;	
+						OutputArray1[i] =0xabcdef99;
+					}
+					
+    
 				//	lport_InputArray[i] =lport_InputArray[v2];
 			}				
 		 }
