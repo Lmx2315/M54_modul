@@ -165,7 +165,7 @@ unsigned int SPW_SPEC_CABLE_PORTS = 0x00000003;
 
 
 // длина массива в 32-разрядных словах
-#define ARRAY_LEN 8
+#define ARRAY_LEN 32
 
 unsigned int Flag_Timeout = 0;
 unsigned int Flag_Corr = 1; // флаг корректности работы теста (0 - корректно, 1 - не корректно)
@@ -2212,8 +2212,8 @@ void sw_data_obmen (u32 a)
  FillArray(OutputArray0,ARRAY_LEN,0xabcdef76);
  FillArray(OutputArray1,ARRAY_LEN,0xdeedbeef);
 
- swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
- swic_receiver_run(route_mask_spw1, InputArray1, descr1, 0xFFFF);
+ //swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
+ //swic_receiver_run(route_mask_spw1, InputArray1, descr1, 0xFFFF);
 
  swic_send_packet(route_mask_spw1, OutputArray0, size, 1);
  swic_send_packet(route_mask_spw0, OutputArray1, size, 1);
@@ -2310,16 +2310,6 @@ char readed;
 
  //SW_init ();
 
-
- RST_1288(0);
-
- Transf("------------------------\n\r");
- Transf("-        THE END       -\n\r");
- Transf("------------------------\n\r");
-
-// x_out("test=",0xdeedbeef);
-
- RST_1288(1);
 
       while (1)
   {

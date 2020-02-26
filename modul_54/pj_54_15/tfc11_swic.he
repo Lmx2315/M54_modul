@@ -110,7 +110,7 @@ b800dfe8 l     O .bss	00000001 completed.3095
 b800dfec l     O .bss	00000004 dtor_idx.3097
 b8001194 l     F .text	00000000 frame_dummy
 b800dff0 l     O .bss	00000018 object.3107
-00000000 l    df *ABS*	00000000 e:/mcstudio_3m_mc-30sf6/tools4x/bin/../lib/gcc/mipsel-elf32/4.8.1/../../../../mipsel-elf32/lib/crt0.o
+00000000 l    df *ABS*	00000000 c:/mcstudio_3m_mc-30sf6/tools4x/bin/../lib/gcc/mipsel-elf32/4.8.1/../../../../mipsel-elf32/lib/crt0.o
 b80013b8 l     F .text	00000044 zerobss
 b80013fc l     F .text	00000078 init
 00000000 l    df *ABS*	00000000 crtstuff.c
