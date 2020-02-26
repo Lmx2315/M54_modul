@@ -165,21 +165,21 @@ unsigned int SPW_SPEC_CABLE_PORTS = 0x00000003;
 
 
 // длина массива в 32-разр€дных словах
-#define ARRAY_LEN 32
+#define ARRAY_LEN 4096
 
 unsigned int Flag_Timeout = 0;
 unsigned int Flag_Corr = 1; // флаг корректности работы теста (0 - корректно, 1 - не корректно)
 unsigned int Flag_Disconnect = 0;
 
-volatile unsigned int SWIC_Speed = 2;//1 - 5 Mбит , 2 - 10 ћбит,8 - 40 ћбит, 0x50 - 400 ћбит/с
+volatile unsigned int SWIC_Speed = 20;//1 - 5 Mбит , 2 - 10 ћбит,8 - 40 ћбит, 0x50 - 400 ћбит/с
 unsigned  int speed;
 unsigned  int SWIC_Number = 5;
 int errors=0;
 
 unsigned int OutputArray0[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
-unsigned int OutputArray1[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
-unsigned int InputArray0[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
-unsigned int InputArray1[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
+unsigned int OutputArray1[1] __attribute__ ((aligned (8))) = {0,};
+unsigned int InputArray0[1] __attribute__ ((aligned (8))) = {0,};
+unsigned int InputArray1[1] __attribute__ ((aligned (8))) = {0,};
 
 //-------прототипы функций------------------
 u32 IO ( char* );
@@ -2123,6 +2123,9 @@ void SW_init (void)
 //  assign_dma_rx_data((struct DMA_PORT_CH_cl *) 0xb82fa840);
 //  assign_dma_tx_desc((struct DMA_PORT_CH_cl *) 0xb82fa880);
 //  assign_dma_tx_data((struct DMA_PORT_CH_cl *) 0xb82fa8C0);
+  set_dma_enabled(false);
+  set_work_enabled(false);
+
 
   // ѕодготовка соединений
   // cable_test_start
@@ -2200,6 +2203,30 @@ Delay_ms(10);
 Delay_ms(10);
 }
 
+void Fill_array_1 ()
+{
+	int i=0;
+	
+	OutputArray0[0]=0x01;
+	
+	for (i=1;i<ARRAY_LEN;i++)
+	{
+		OutputArray0	[i] =(test_sin(4*i)<<16)+test_cos(4*i);
+	}	
+}
+
+void Fill_array_2 ()
+{
+	int i=0;
+	
+	OutputArray0[0]=0x01;
+	
+	for (i=1;i<ARRAY_LEN;i++)
+	{
+		OutputArray0	[i] =0x01234567;
+	}	
+}
+
 void sw_data_obmen (u32 a)
 {
   int size = ARRAY_LEN*sizeof(int);
@@ -2209,14 +2236,16 @@ void sw_data_obmen (u32 a)
 
 //Transf("stage 3\r\n");
 
- FillArray(OutputArray0,ARRAY_LEN,0xabcdef76);
- FillArray(OutputArray1,ARRAY_LEN,0xdeedbeef);
+// FillArray(OutputArray0,ARRAY_LEN,0xabcdef76);
+// FillArray(OutputArray1,ARRAY_LEN,0xdeedbeef);
+
+	Fill_array_1();
 
  //swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
  //swic_receiver_run(route_mask_spw1, InputArray1, descr1, 0xFFFF);
 
  swic_send_packet(route_mask_spw1, OutputArray0, size, 1);
- swic_send_packet(route_mask_spw0, OutputArray1, size, 1);
+ //swic_send_packet(route_mask_spw0, OutputArray1, size, 1);
 
  x_out("route_mask_spw1:",route_mask_spw1);
  x_out("route_mask_spw0:",route_mask_spw0);
@@ -2227,11 +2256,11 @@ void sw_data_obmen (u32 a)
 //Delay_ms(10);
 
  Transf("\nArray0:\r\n");
- error = VerifyArray(InputArray0,ARRAY_LEN,a);
+// error = VerifyArray(InputArray0,ARRAY_LEN,a);
  x_out("descr0[0]:",descr0[0]);
  x_out("descr0[1]:",descr0[1]);
  Transf("\nArray1:\r\n");
- error = VerifyArray(InputArray1,ARRAY_LEN,a);
+// error = VerifyArray(InputArray1,ARRAY_LEN,a);
  x_out("descr1[0]:",descr1[0]);
  x_out("descr1[1]:",descr1[1]);
 
@@ -2251,6 +2280,93 @@ CSR_SWIC_RX_DAT(1);
 	get_status(port_spw1,true);
 }
 
+int test_sin(u32 i)
+{
+
+	u32 b=0;
+	int a[32];
+
+a[0]=0;
+a[1]=6242;
+a[2]=12245;
+a[3]=17778;
+a[4]=22627;
+a[5]=26607;
+a[6]=29564;
+a[7]=31385;
+a[8]=32000;
+a[9]=31385;
+a[10]=29564;
+a[11]=26607;
+a[12]=22627;
+a[13]=17778;
+a[14]=12245;
+a[15]=6242;
+a[16]=0;
+a[17]=-6243;
+a[18]=-12246;
+a[19]=-17779;
+a[20]=-22628;
+a[21]=-26608;
+a[22]=-29565;
+a[23]=-31386;
+a[24]=-32000;
+a[25]=-31386;
+a[26]=-29565;
+a[27]=-26608;
+a[28]=-22628;
+a[29]=-17779;
+a[30]=-12246;
+a[31]=-6243;
+
+	b=i&31;
+
+	return a[b];
+}
+
+int test_cos(u32 i)
+{
+
+	u32 b=0;
+	int a[32];
+
+a[0]=32000;
+a[1]=31385;
+a[2]=29564;
+a[3]=26607;
+a[4]=22627;
+a[5]=17778;
+a[6]=12245;
+a[7]=6242;
+a[8]=0;
+a[9]=-6243;
+a[10]=-12246;
+a[11]=-17779;
+a[12]=-22628;
+a[13]=-26608;
+a[14]=-29565;
+a[15]=-31386;
+a[16]=-32000;
+a[17]=-31386;
+a[18]=-29565;
+a[19]=-26608;
+a[20]=-22628;
+a[21]=-17779;
+a[22]=-12246;
+a[23]=-6243;
+a[24]=-1;
+a[25]=6242;
+a[26]=12245;
+a[27]=17778;
+a[28]=22627;
+a[29]=26607;
+a[30]=29564;
+a[31]=31385;
+
+	b=i&31;
+
+	return a[b];
+}
 
 int sch;
 

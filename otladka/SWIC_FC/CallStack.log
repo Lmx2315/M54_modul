@@ -1132,3 +1132,7 @@ B80073CC: SW_init() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2182)
 B80078F8: main() (c:\work\project_m54\m54_elvis\otladka\swic_fc\main.c, 2311)
 B8001460: ...
 
+-----------------------------------------------
+B800786C: main() (c:\work\project_m54\m54_modul\otladka\swic_fc\main.c, 2320)
+B8001460: ...
+
