@@ -175,7 +175,7 @@ int SYS_timer1=0;
 int SYS_timer2=0;
 int Dtimer0=0;
 int SCH_SW=0;
-int FLAG_TEST=0;
+int FLAG_TEST=1;
 int UART_TIMER=0;
 
 u8 CHN=0;
@@ -203,7 +203,7 @@ int FLAG_STATUS_SPACEWIRE=0;
 //unsigned int lport_InputArray[ARRAY_LEN_lport] __attribute__ ((aligned (8)));
   unsigned int lport_InputArray[ARRAY_LEN_lport] __attribute__ ((section (".xyram_array")));
 
-#define  ARRAY_LEN 2048
+#define  ARRAY_LEN 4096
   unsigned int OutputArray0[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
   unsigned int OutputArray1[ARRAY_LEN] __attribute__ ((aligned (8))) = {0,};
 //unsigned int OutputArray0[ARRAY_LEN] __attribute__ ((section (".xyram_array")));
@@ -1904,6 +1904,11 @@ if (packet_ok==1u)
 if (crc_ok==0x3)  //обработка команд адресатом которых является хозяин
 {
 
+  if (strcmp(Word,"timer")==0)
+   {
+	 u_out ("принял timer:",crc_comp);
+	 u_out ("SYS_timer2:",SYS_timer2);
+   } else
   if (strcmp(Word,"setup")==0)
    {
 	 crc_comp =atoi(DATA_Word);
@@ -2571,6 +2576,7 @@ Delay_ms(100);
 u32 sw_data_obmen (u32 a)
 {
 
+  SYS_timer2=0;
   int size = ARRAY_LEN*sizeof(int);
   unsigned int descr0[2]__attribute__ ((aligned(8))) = {0};
   unsigned int descr1[2]__attribute__ ((aligned(8))) = {0};
@@ -2583,15 +2589,12 @@ u32 sw_data_obmen (u32 a)
 
   MASKR0_set();
 
-// swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
+   swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
 // swic_receiver_run(route_mask_spw1, InputArray1, descr1, 0xFFFF);
 
 //if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
 //if (a==1) swic_send_packet(route_mask_spw1, OutputArray1    , size, 1);
 
-	if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
-	if (a==1) swic_send_packet(route_mask_spw0, OutputArray1    , size, 1);	
-	
 	if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
 	if (a==1) swic_send_packet(route_mask_spw0, OutputArray1    , size, 1);	
 
@@ -2869,14 +2872,10 @@ A1_PWRDN(0);
 A2_PWRDN(0);
 
 Delay_ms(100); 
-
-
 	
 //adc1_init (0);
 Delay_ms(100);
 //adc2_init (0);
-
-
 
 Delay_ms(100);
 SETUP ();
@@ -2902,6 +2901,8 @@ IO("~0 adc:1;");
  //  LED(1);
   
    IPWOFF(1);
+   
+   u8 zzz=0;
 
 Transf("--------------\r\n");
  while (1)
@@ -2919,43 +2920,37 @@ Transf("--------------\r\n");
 		sch_spaceware++;
 	};	
 
-	if ((FLAG_SW_INT_DAT==1)&&(FLAG_SW_INT_DES==1))
+	if ((FLAG_SW_INT_DAT==1)&&(FLAG_SW_INT_DES==1))//(SYS_timer2>500)/
 	{
 		FLAG_SW_INT_DAT=0;
 		FLAG_SW_INT_DES=0;
 		FLAG_SW_START=1;
 		sch_event++;
-		 Delay_ms(100);
 		if (SCH_SW==2)	{lPORT_DMA ();}
 	}
 	
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(FLAG_DATA_PREP==0))
 	{
+		OutputArray0[0]=0x1;
+		OutputArray1[0]=0x2;
 		
-		for (i=0;i<N_col;i++)
+		for (i=1;i<N_col;i++)
 		 {			
 			if (FLAG_TEST==1)
 			{
 					OutputArray0	[i] =(test_sin(2*i+sch_event)<<16)+test_cos(2*i+sch_event);	
 					OutputArray1    [i] =(0xffff&test_sin(2*i+sch_event));	
 
-		//			OutputArray0	[i] =(0xaaaa0000)+(sch_event&0xffff);	
-		//			OutputArray1    [i] =(0xbbbb0000)+(sch_event&0xffff);
+			//		OutputArray0	[i] =(0xaaaa0000)+(sch_event&0xffff);	
+			//		OutputArray1    [i] =(0xbbbb0000)+(sch_event&0xffff);
 			} else
 			{
 					v1=2*i+1023;
 					v2=2*i+1024;
-					if (i!=0)
-					{
+			
 						OutputArray0[i] =lport_InputArray[v1];	
 						OutputArray1[i] =lport_InputArray[v2];
-					}else
-					{
-						OutputArray0[i] =0xabcdef99;	
-						OutputArray1[i] =0xabcdef99;
-					}
-					
-    
+				
 				//	lport_InputArray[i] =lport_InputArray[v2];
 			}				
 		 }
