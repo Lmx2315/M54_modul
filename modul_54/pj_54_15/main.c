@@ -175,7 +175,7 @@ int SYS_timer1=0;
 int SYS_timer2=0;
 int Dtimer0=0;
 int SCH_SW=0;
-int FLAG_TEST=1;
+int FLAG_TEST=0;
 int UART_TIMER=0;
 
 u8 CHN=0;
