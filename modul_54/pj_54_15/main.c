@@ -2964,6 +2964,7 @@ Transf("--------------\r\n");
 	    sw_data_obmen(CHN);//CHN SCH_SW
 		SCH_SW=2;
 		FLAG_SW_START =0;
+		if (CHN==0) CHN=1;else CHN=0;
 	}
 
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(flag_SW_UP==0))
