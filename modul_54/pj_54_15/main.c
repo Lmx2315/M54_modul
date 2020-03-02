@@ -900,7 +900,7 @@ unsigned int get_status(unsigned int port, bool print) {
 
   if (port > port_max_numb)
     return 0xFFFFFFFF;
-			 
+
   ds_state = GET_GIGASPWR_SPW_STATUS_BDS_STATE(REGS->SPW_STATUS[port]);
 
   if (print) {
@@ -1111,7 +1111,7 @@ void UART0_conf(int BaudRate, int Frq) {
 } // UART_conf
 
 
-void UART_sendByte(char Sym) 
+void UART_sendByte(char Sym)
 {
 //	IPWOFF(1);//переводим драйвер 485 в режим передачи
 // пишем символ в порт
@@ -1133,7 +1133,7 @@ void Transf(const char *s)
  {
     int l=0;
     int i=0;
-      
+
       	l=strlen(s);
         if ((text_lengh+l)>Bufer_size-5) text_lengh=0;
         for (i=text_lengh;i<(text_lengh+l);i++) text_buffer[i]=s[i-text_lengh];
@@ -1156,7 +1156,7 @@ void Transf(const char *s)
 		IPWOFF(1);
 		for (i=0;i<text_lengh;i++) UART_sendByte(text_buffer[i]);
 		text_lengh=0;
-	}	
+	}
  }
 
 void u_out (const char *s,u32 a)
@@ -1409,7 +1409,7 @@ void SPWR_TX_DAT_handler()
 {
 	CSR_SWIC_TX_DAT(0);
 	CSR_SWIC_TX_DAT(1);
-	
+
 	FLAG_SW_INT_DAT=1;
 }
 
@@ -1417,7 +1417,7 @@ void SPWR_TX_DES_handler()
 {
 	CSR_SWIC_TX_DES(0);
 	CSR_SWIC_TX_DES(1);
-	
+
 	FLAG_SW_INT_DES=1;
 }
 
@@ -1702,7 +1702,7 @@ void adc1_init (u8 a)
 	}	else
 	{
 		A1_PWRDN(1);
-	}		
+	}
 
 
 }
@@ -1715,7 +1715,7 @@ void adc2_init (u8 a)
 	if (a==1)
 	{
 		A2_PWRDN(0);
-	
+
 		Delay_ms(10);
 		A2_SPLIN(1);
 		Delay_ms(100);
@@ -1723,7 +1723,7 @@ void adc2_init (u8 a)
 		A2_CSB(0);
 		Delay_ms(100);
 		A2_CSB(1);
-	
+
 	}	else	A2_PWRDN(1);
 }
 
@@ -1731,15 +1731,15 @@ void freq_func (reg_1288 *dsp,u32 f)
 {
 	u32 z=0;
 	long long code=0;
-	
+
 //	PF1_SYNC_START(0);
-	 
+
 	z=f-360000000;
-	
+
 	z=100000000-z;
-	
+
 	code=z*4294967296/100000000;
-	
+
 	dsp->RX1_NCO_FRQL  = code&0xffff;//25 MHz
 	dsp->RX1_NCO_FRQH  = code>>16;
 
@@ -1751,7 +1751,7 @@ void freq_func (reg_1288 *dsp,u32 f)
 
 	dsp->RX4_NCO_FRQL  = code&0xffff;//25 MHz
 	dsp->RX4_NCO_FRQH  = code>>16;//0x4000
-	
+
 	spi_1288_wr (0x002e,DSP.RX1_NCO_FRQL);
 	spi_1288_wr (0x002f,DSP.RX1_NCO_FRQH);
 	spi_1288_wr (0x012e,DSP.RX2_NCO_FRQL);
@@ -1764,7 +1764,7 @@ void freq_func (reg_1288 *dsp,u32 f)
 
   spi_1288_wr (0x0005,0x0003);
 //  PF1_SYNC_START(1);
-	
+
 }
 
 void Menu1()
@@ -1923,7 +1923,7 @@ if (crc_ok==0x3)  //обработка команд адресатом которых является хозяин
 	 FLAG_SW_START=1;
 	 SCH_SW=0;
 	 sch_event=0;
-	 sch_spaceware=0;	 
+	 sch_spaceware=0;
 	 SW_init ();
    } else
   if (strcmp(Word,"freq")==0)
@@ -1936,7 +1936,7 @@ if (crc_ok==0x3)  //обработка команд адресатом которых является хозяин
    {
 	 crc_comp =atoi(DATA_Word);
 	 u_out ("принял init_1288:",crc_comp);
-	 
+
 	  //---------1288-----------------
 //	spi_1288_wr (0x0005,0x8002);
 //	while (spi_1288_rd(0x05)!=0x8000) {};
@@ -1949,8 +1949,8 @@ if (crc_ok==0x3)  //обработка команд адресатом которых является хозяин
   PF1_SYNC_START(0);
   spi_1288_wr (0x0005,0x0307);
   PF1_SYNC_START(1);
-	
-	lPORT_DMA ();	
+
+	lPORT_DMA ();
 
    } else
  if (strcmp(Word,"rst_1288")==0)
@@ -1964,13 +1964,13 @@ if (strcmp(Word,"help")==0)
      Transf ("принял help\r"    );
      Transf("\r");
      Menu1(0);
-   } else	   
+   } else
  if (strcmp(Word,"test")==0)
    {
 	 crc_comp =atoi(DATA_Word);
 	 u_out ("принял test:",crc_comp);
 	 FLAG_TEST=crc_comp;;
-   } else   
+   } else
 if (strcmp(Word,"adc")==0) //
    {
 	Transf ("----------\r"    );
@@ -2070,7 +2070,7 @@ void ID0_init (void)
 	ITSCALE0  = 100;  //1 MHz
 //	ITCOUNT0  = 0;
 
-	ITCSR0    = ITCSR0|0x01;	
+	ITCSR0    = ITCSR0|0x01;
 }
 
 
@@ -2542,12 +2542,12 @@ Delay_ms(200);
 Transf("stage 2\r\n");
   //,# Ожидание разгона PLL
   for (port_i = port_spw0; port_i <= port_spw1; port_i++)
-       if (SPW_SPEC_CABLE_PORTS & (1 << port_i)) 
+       if (SPW_SPEC_CABLE_PORTS & (1 << port_i))
 	   {
 		   SYS_timer1=0;
           while (get_rx_speed(port_i) < speed - 3)
 		  {
-			 if (SYS_timer1>2000) {Transf("ERROR SPEED wait!!!\r\n");break;} 
+			 if (SYS_timer1>2000) {Transf("ERROR SPEED wait!!!\r\n");break;}
 		  };
          //,# Проверка, что соединение не разорвалось
          errors += check_SpW_link_status_run((GIGASPWR_cl*)0, port_i);
@@ -2583,7 +2583,7 @@ u32 sw_data_obmen (u32 a)
   u32 error=0;
   u32 var=0;
   u32 *next;
-  
+
 //next=lport_InputArray+1023;//указатель на продолжение массива
 //next=lport_InputArray;//указатель на продолжение массива
 
@@ -2596,7 +2596,7 @@ u32 sw_data_obmen (u32 a)
 //if (a==1) swic_send_packet(route_mask_spw1, OutputArray1    , size, 1);
 
 	if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
-	if (a==1) swic_send_packet(route_mask_spw0, OutputArray1    , size, 1);	
+	if (a==1) swic_send_packet(route_mask_spw0, OutputArray1    , size, 1);
 
 //swic_receiver_wait(1);
 //swic_receiver_wait(0);
@@ -2717,11 +2717,11 @@ void SETUP (void)
  A1_CSB(1);
  A1_SPLIN(0);
  A1_PWRDN(0);
- 
+
  A2_CSB(1);
  A2_SPLIN(0);
- A2_PWRDN(0); 
-  
+ A2_PWRDN(0);
+
  Delay_ms(50);
  PF1_SYNC_START(0);
  Delay_ms(5);
@@ -2729,11 +2729,11 @@ void SETUP (void)
  Delay_ms(5);
  RST_1288(1);
  Delay_ms(10);
- 
+
  spi_1288_wr (0x000,0x78);//soft reset
- 
+
 AT1(60); //
-AT2(60);	
+AT2(60);
 
 //---------1288-----------------
 //  spi_1288_wr (0x0005,0x0306);
@@ -2742,17 +2742,17 @@ AT2(60);
   dsp_1288hk1t_init();
   spi_1288_wr (0x0005,0x0306);
   PF1_SYNC_START(1);
- /* 
+ /*
 	spi_1288_wr (0x0005,0x8000);
-	while (spi_1288_rd(0x05)!=0x8000) {}; 
+	while (spi_1288_rd(0x05)!=0x8000) {};
 	spi_1288_wr (0x0005,0x8002);
 	while (spi_1288_rd(0x05)!=0x8000) {};
 	spi_1288_wr (0x0005,0x8004);
 	while (spi_1288_rd(0x05)!=0x8000) {};
 	spi_1288_wr (0x0005,0x8100);
-	while (spi_1288_rd(0x05)!=0x8000) {};	
+	while (spi_1288_rd(0x05)!=0x8000) {};
 	spi_1288_wr (0x0005,0x8200);
-	while (spi_1288_rd(0x05)!=0x8000) {};  	
+	while (spi_1288_rd(0x05)!=0x8000) {};
 	spi_1288_wr (0x0005,0x8001);
 */
 
@@ -2815,9 +2815,9 @@ char readed;
    MFBSP3_init();//режим порта SPI + ввода-вывода общего назначения
    SPI_init();
 
-
+ Transf(\n\r");
  Transf("----------------------\n\r");
- Transf("-       START        -\n\r");
+ Transf("-         M54        -\n\r");
  Transf("----------------------\n\r");
 
  Adress=0x30; //адресс кассеты
@@ -2826,7 +2826,7 @@ char readed;
  rx_rd_index0=0;
  rx_wr_index0=0;
  rx_buffer_overflow0=0;
- 
+
 
 
 //-------------сброс аттенюаторов----------------------
@@ -2853,7 +2853,7 @@ AT2(0);
   IR_MFBSP_RX_CH1 = ((unsigned int) &lport_InputArray[0]) - 0xA0000000; // записываем физический адрес в регистр индекса
   CSR_MFBSP_RX_CH1 = (((ARRAY_LEN_lport/2)-1)<<16) | // WCX = LEN/2
                                            (15<<2) | // WN = 15 (размер пачки - 16 слов)
-												1;												
+												1;
 */
 //-----------------------------------------------------
   risc_register_interrupt(SPWR_TX_DAT_handler, RISC_INT_SPWR_TX_DAT);
@@ -2871,8 +2871,8 @@ A2_SPLIN(0);
 A1_PWRDN(0);
 A2_PWRDN(0);
 
-Delay_ms(100); 
-	
+Delay_ms(100);
+
 //adc1_init (0);
 Delay_ms(100);
 //adc2_init (0);
@@ -2899,9 +2899,9 @@ Delay_ms(1000);
 IO("~0 adc:1;");
 
  //  LED(1);
-  
+
    IPWOFF(1);
-   
+
    u8 zzz=0;
 
 Transf("--------------\r\n");
@@ -2909,16 +2909,16 @@ Transf("--------------\r\n");
   {
     UART_conrol();
 	tx_uart();
-	
+
 	if (UART_TIMER>100) IPWOFF(0);//слушаем RS485
 
 	if (flag_DMA_LPORT>0)
-	{		
+	{
 		flag_DMA_LPORT=0;
 		FLAG_DATA_PREP=0;
 		SCH_SW=0;
 		sch_spaceware++;
-	};	
+	};
 
 	if ((FLAG_SW_INT_DAT==1)&&(FLAG_SW_INT_DES==1))//(SYS_timer2>500)/
 	{
@@ -2928,34 +2928,34 @@ Transf("--------------\r\n");
 		sch_event++;
 		if (SCH_SW==2)	{lPORT_DMA ();}
 	}
-	
+
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(FLAG_DATA_PREP==0))
 	{
 		OutputArray0[0]=0x1;
 		OutputArray1[0]=0x2;
-		
+
 		for (i=1;i<N_col;i++)
-		 {			
+		 {
 			if (FLAG_TEST==1)
 			{
-					OutputArray0	[i] =(test_sin(2*i+sch_event)<<16)+test_cos(2*i+sch_event);	
-					OutputArray1    [i] =(0xffff&test_sin(2*i+sch_event));	
+					OutputArray0	[i] =(test_sin(2*i+sch_event)<<16)+test_cos(2*i+sch_event);
+					OutputArray1    [i] =(0xffff&test_sin(2*i+sch_event));
 
-			//		OutputArray0	[i] =(0xaaaa0000)+(sch_event&0xffff);	
+			//		OutputArray0	[i] =(0xaaaa0000)+(sch_event&0xffff);
 			//		OutputArray1    [i] =(0xbbbb0000)+(sch_event&0xffff);
 			} else
 			{
 					v1=2*i+1023;
 					v2=2*i+1024;
-			
-						OutputArray0[i] =lport_InputArray[v1];	
+
+						OutputArray0[i] =lport_InputArray[v1];
 						OutputArray1[i] =lport_InputArray[v2];
-				
+
 				//	lport_InputArray[i] =lport_InputArray[v2];
-			}				
+			}
 		 }
 
-		 FLAG_DATA_PREP=1; 	 
+		 FLAG_DATA_PREP=1;
 	}
 
 
@@ -2984,12 +2984,12 @@ Transf("--------------\r\n");
 
 	//------------
 	/*
-	if (flag_error) 
+	if (flag_error)
 	{
 		TST2(1);
 		flag_error=0;
-	}	
-	else 
+	}
+	else
 	{
 		TST2(0);
 		flag_error=1;
