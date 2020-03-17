@@ -1965,6 +1965,7 @@ if (strcmp(Word,"help")==0)
      Transf ("принял help\r"    );
      Transf("\r");
      Menu1(0);
+	 u_out("sch_spaceware:",sch_spaceware);
    } else
  if (strcmp(Word,"test")==0)
    {
