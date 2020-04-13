@@ -1,0 +1,73 @@
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\obj\Debug\fft_writer.Form1.resources
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\obj\Debug\fft_writer.MainForm.resources
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\obj\Debug\fft_writer.csproj.GenerateResource.cache
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\obj\Debug\fft_writer.csproj.CoreCompileInputs.cache
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\obj\Debug\fft_writer.csprojAssemblyReference.cache
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\bin\Debug\fft_writer.exe.config
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\bin\Debug\fft_writer.exe
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\bin\Debug\fft_writer.pdb
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\obj\Debug\fft_writer.exe
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\obj\Debug\fft_writer.pdb
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer\fft_writer\obj\Debug\PlotWrapper.Plot.resources
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe.config
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.pdb
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.Form1.resources
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.MainForm.resources
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\obj\Debug\PlotWrapper.Plot.resources
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csproj.GenerateResource.cache
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csproj.CoreCompileInputs.cache
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.exe
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.pdb
+C:\Users\Lmx2315\Documents\SharpDevelop Projects\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csprojAssemblyReference.cache
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe.config
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.pdb
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.Form1.resources
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.MainForm.resources
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\PlotWrapper.Plot.resources
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csproj.GenerateResource.cache
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csproj.CoreCompileInputs.cache
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.exe
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.pdb
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csprojAssemblyReference.cache
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe.config
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.pdb
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csprojAssemblyReference.cache
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.Form1.resources
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.MainForm.resources
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\obj\Debug\PlotWrapper.Plot.resources
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csproj.GenerateResource.cache
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.exe
+C:\Users\Lmx\Desktop\project_m54_test\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.pdb
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe.config
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.pdb
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csprojAssemblyReference.cache
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.Form1.resources
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.MainForm.resources
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\PlotWrapper.Plot.resources
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csproj.GenerateResource.cache
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.exe
+C:\Users\lmx\Documents\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.pdb
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe.config
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.pdb
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csprojAssemblyReference.cache
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.Form1.resources
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.MainForm.resources
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\obj\Debug\PlotWrapper.Plot.resources
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csproj.GenerateResource.cache
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.exe
+C:\Work\Project_M54\CSHARP_stend\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.pdb
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe.config
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.exe
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\bin\Debug\fft_writer.pdb
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csprojAssemblyReference.cache
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.Form1.resources
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.MainForm.resources
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\obj\Debug\PlotWrapper.Plot.resources
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.csproj.GenerateResource.cache
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.exe
+C:\Work\Project_M54\M54_stend_1\fft_writer_eth_udp\fft_writer\obj\Debug\fft_writer.pdb

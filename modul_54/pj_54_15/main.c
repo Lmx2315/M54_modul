@@ -1704,8 +1704,6 @@ void adc1_init (u8 a)
 	{
 		A1_PWRDN(1);
 	}
-
-
 }
 
 void adc2_init (u8 a)
@@ -2875,9 +2873,9 @@ A2_PWRDN(0);
 
 Delay_ms(100);
 
-//adc1_init (0);
+adc1_init (1);
 Delay_ms(100);
-//adc2_init (0);
+adc2_init (1);
 
 Delay_ms(100);
 SETUP ();

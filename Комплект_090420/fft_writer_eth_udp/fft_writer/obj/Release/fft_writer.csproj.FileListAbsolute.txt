@@ -1,0 +1,9 @@
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\bin\Release\fft_writer.exe.config
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\bin\Release\fft_writer.exe
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Release\fft_writer.Form1.resources
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Release\fft_writer.MainForm.resources
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Release\PlotWrapper.Plot.resources
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Release\fft_writer.csproj.GenerateResource.cache
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Release\fft_writer.csproj.CoreCompileInputs.cache
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Release\fft_writer.exe
+C:\Users\Cool_hacker_Sergey\Documents\fft_writer_eth_udp\fft_writer\obj\Release\fft_writer.csprojAssemblyReference.cache
