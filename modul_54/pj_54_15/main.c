@@ -184,6 +184,12 @@ u8 Even_check=0;
 u32 sch_event=0;
 u32 FLAG_SW_START=0;
 
+u32 ch0_A=0;//амплитуда сигнала в канале 0
+u32 ch1_A=0;//амплитуда сигнала в канале 0
+
+#define LEVEL_ERROR0 8000
+#define LEVEL_ERROR1 8000
+
 unsigned int Flag_Timeout = 0;
 unsigned int Flag_Corr = 1; // флаг корректности работы теста (0 - корректно, 1 - не корректно)
 unsigned int Flag_Disconnect = 0;
@@ -1733,9 +1739,9 @@ void freq_func (reg_1288 *dsp,u32 f)
 
 //	PF1_SYNC_START(0);
 
-	z=f-360000000;
+	z=f-410000000;
 
-	z=100000000-z;
+//	z=100000000-z;  //надо было с промежуткой 75 ћ√ц
 
 	code=z*4294967296/100000000;
 
@@ -1903,6 +1909,12 @@ if (packet_ok==1u)
 if (crc_ok==0x3)  //обработка команд адресатом которых €вл€етс€ хоз€ин
 {
 
+  if (strcmp(Word,"ch_A")==0)  //выводим амплитуды сигналов в каналах поделки
+   {
+	 u_out ("прин€л ch_A:",0);
+	 u_out("ch0_A=",ch0_A);
+	 u_out("ch1_A=",ch1_A);
+   } else
   if (strcmp(Word,"timer")==0)
    {
 	 u_out ("прин€л timer:",crc_comp);
@@ -2732,8 +2744,8 @@ void SETUP (void)
 
  spi_1288_wr (0x000,0x78);//soft reset
 
-AT1(60); //
-AT2(60);
+AT1(0); //
+AT2(0);
 
 //---------1288-----------------
 //  spi_1288_wr (0x0005,0x0306);
@@ -2758,6 +2770,35 @@ AT2(60);
 
 }
 
+ unsigned int root1(unsigned int a)
+{
+   unsigned int x;
+   x = (a/0x3f + 0x3f)>>1;
+   x = (a/x + x)>>1;
+   x = (a/x + x)>>1;
+   return(x); 
+}
+
+void error_pin ()
+{
+	static t1=0;
+	if (t1<2) t1=t1+1;
+	else
+	{
+		t1=0;
+		if (flag_error)
+		{
+			if ((ch0_A>LEVEL_ERROR0)&(ch1_A>LEVEL_ERROR1)) TST2(1);
+			flag_error=0;
+		}
+		else
+		{
+			TST2(0);
+			flag_error=1;
+		}	
+	}
+		
+}
 
 
 //u8 M[4100];
@@ -2788,12 +2829,12 @@ u32 b0,b1,b2,b3;
 u32 a0,a1,a2,a3;
 u32 N_col=0;
 
-
-
-int accum_I=0;
-int accum_Q=0;
-
-
+u32 accum_0=0;
+u32 accum_1=0;
+u32 accum_X0=0;
+u32 accum_X1=0;
+int accum_A0=0;
+int accum_A1=0;
  //---------------------------------------------------
 char readed;
         CLK_EN  = 0xFFFFFFFF; // включение тактовой частоты
@@ -2827,15 +2868,9 @@ char readed;
  rx_wr_index0=0;
  rx_buffer_overflow0=0;
 
+ SYS_CSR |= 2;
 
-
-//-------------сброс аттенюаторов----------------------
-AT1(0); //
-AT2(0);
-//-----------------------------------------------------
-  SYS_CSR |= 2;
-
-  risc_set_interrupts_vector(INTH_80000180);//INTH_80000180
+ risc_set_interrupts_vector(INTH_80000180);//INTH_80000180
 
   risc_register_interrupt(int_handler, RISC_INT_UART1);
   IER_UART();
@@ -2901,7 +2936,6 @@ IO("~0 adc:1;");
  //  LED(1);
 
    IPWOFF(1);
-
    u8 zzz=0;
 
 Transf("--------------\r\n");
@@ -2934,6 +2968,8 @@ Transf("--------------\r\n");
 		OutputArray0[0]=0x1;
 		OutputArray1[0]=0x2;
 
+		accum_X0=0;
+		accum_X1=0;
 		for (i=1;i<N_col;i++)
 		 {
 			if (FLAG_TEST==1)
@@ -2945,16 +2981,25 @@ Transf("--------------\r\n");
 			//		OutputArray1    [i] =(0xbbbb0000)+(sch_event&0xffff);
 			} else
 			{
-					v1=2*i+1023;
-					v2=2*i+1024;
+				v1=2*i+1023;
+				v2=2*i+1024;
 
-						OutputArray0[i] =lport_InputArray[v1];
-						OutputArray1[i] =lport_InputArray[v2];
-
-				//	lport_InputArray[i] =lport_InputArray[v2];
+				OutputArray0[i] =lport_InputArray[v1];
+				OutputArray1[i] =lport_InputArray[v2];
+						
+				accum_0 =((lport_InputArray[v1]>>16)&0xffff);// дл€ 0 канала
+				accum_1 =((lport_InputArray[v2]>>16)&0xffff);// дл€ 1 канала
+						
+				if (accum_0<32767) {if (accum_0>accum_X0) accum_X0=accum_0;}					
+			    if (accum_1<32767) {if (accum_1>accum_X1) accum_X1=accum_1;}	
+				
+				error_pin ();
 			}
 		 }
-
+		 
+		 ch0_A=accum_X0;
+		 ch1_A=accum_X1;
+		 
 		 FLAG_DATA_PREP=1;
 	}
 
@@ -2981,22 +3026,7 @@ Transf("--------------\r\n");
 		flag_SW_UP=0;
 		IO("~0 SW_init;");
 	}
-
-	//------------
-	/*
-	if (flag_error)
-	{
-		TST2(1);
-		flag_error=0;
-	}
-	else
-	{
-		TST2(0);
-		flag_error=1;
-	}
-	*/
-	//------------
-
+	error_pin ();
   }
 
 }
