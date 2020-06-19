@@ -509,19 +509,19 @@ void INIT_REG_DSP (reg_1288 *dsp)
 
 	dsp->RX1_DFIR1_CFG2 = 0x0000;
 	dsp->RX1_DFIR1_CFG2 = (0<<4 ) //Зарезервировано
-						 |(5);//Регулировка уровня выходного сигнала DFIR1.Коэффициент усиления на выходе DFIR1 равен 2scl-21
+						 |(4);//Регулировка уровня выходного сигнала DFIR1.Коэффициент усиления на выходе DFIR1 равен 2scl-21
 
 	dsp->RX2_DFIR1_CFG2 = 0x0000;
 	dsp->RX2_DFIR1_CFG2 = (0<<4 ) //Зарезервировано
-						 |(5);//Регулировка уровня выходного сигнала DFIR1.Коэффициент усиления на выходе DFIR1 равен 2scl-21
+						 |(4);//Регулировка уровня выходного сигнала DFIR1.Коэффициент усиления на выходе DFIR1 равен 2scl-21
 
 	dsp->RX3_DFIR1_CFG2 = 0x0000;
 	dsp->RX3_DFIR1_CFG2 = (0<<4 ) //Зарезервировано
-						 |(5);//Регулировка уровня выходного сигнала DFIR1.Коэффициент усиления на выходе DFIR1 равен 2scl-21
+						 |(4);//Регулировка уровня выходного сигнала DFIR1.Коэффициент усиления на выходе DFIR1 равен 2scl-21
 
 	dsp->RX4_DFIR1_CFG2 = 0x0000;
 	dsp->RX4_DFIR1_CFG2 = (0<<4 ) //Зарезервировано
-					     |(5);//Регулировка уровня выходного сигнала DFIR1.Коэффициент усиления на выходе DFIR1 равен 2scl-21
+					     |(4);//Регулировка уровня выходного сигнала DFIR1.Коэффициент усиления на выходе DFIR1 равен 2scl-21
 
 
 	dsp->RX1_DFIR2_CFG1 = 0x0000;
@@ -605,72 +605,70 @@ void INIT_REG_DSP (reg_1288 *dsp)
 //		порядке фильтра записываемое значение центрального коэффициента должно быть равно
 //			половине значения центрального коэффициента.
 //				Нечетные регистры зарезервированы для расширения разрядности коэффициентов.
-dsp->RX1_CF_DFIR1[0] =-3;
+dsp->RX1_CF_DFIR1[0] =-5;
 dsp->RX1_CF_DFIR1[1] =0;
-dsp->RX1_CF_DFIR1[2] =-2;
+dsp->RX1_CF_DFIR1[2] =-4;
 dsp->RX1_CF_DFIR1[3] =0;
-dsp->RX1_CF_DFIR1[4] =4;
+dsp->RX1_CF_DFIR1[4] =8;
 dsp->RX1_CF_DFIR1[5] =0;
-dsp->RX1_CF_DFIR1[6] =7;
+dsp->RX1_CF_DFIR1[6] =14;
 dsp->RX1_CF_DFIR1[7] =0;
-dsp->RX1_CF_DFIR1[8] =-5;
+dsp->RX1_CF_DFIR1[8] =-9;
 dsp->RX1_CF_DFIR1[9] =0;
-dsp->RX1_CF_DFIR1[10] =-17;
+dsp->RX1_CF_DFIR1[10] =-34;
 dsp->RX1_CF_DFIR1[11] =0;
-dsp->RX1_CF_DFIR1[12] =-1;
+dsp->RX1_CF_DFIR1[12] =-2;
 dsp->RX1_CF_DFIR1[13] =0;
-dsp->RX1_CF_DFIR1[14] =32;
+dsp->RX1_CF_DFIR1[14] =63;
 dsp->RX1_CF_DFIR1[15] =0;
-dsp->RX1_CF_DFIR1[16] =20;
+dsp->RX1_CF_DFIR1[16] =40;
 dsp->RX1_CF_DFIR1[17] =0;
-dsp->RX1_CF_DFIR1[18] =-44;
+dsp->RX1_CF_DFIR1[18] =-88;
 dsp->RX1_CF_DFIR1[19] =0;
-dsp->RX1_CF_DFIR1[20] =-58;
+dsp->RX1_CF_DFIR1[20] =-115;
 dsp->RX1_CF_DFIR1[21] =0;
-dsp->RX1_CF_DFIR1[22] =41;
+dsp->RX1_CF_DFIR1[22] =81;
 dsp->RX1_CF_DFIR1[23] =0;
-dsp->RX1_CF_DFIR1[24] =114;
+dsp->RX1_CF_DFIR1[24] =228;
 dsp->RX1_CF_DFIR1[25] =0;
-dsp->RX1_CF_DFIR1[26] =-4;
+dsp->RX1_CF_DFIR1[26] =-7;
 dsp->RX1_CF_DFIR1[27] =0;
-dsp->RX1_CF_DFIR1[28] =-176;
+dsp->RX1_CF_DFIR1[28] =-353;
 dsp->RX1_CF_DFIR1[29] =0;
-dsp->RX1_CF_DFIR1[30] =-86;
+dsp->RX1_CF_DFIR1[30] =-172;
 dsp->RX1_CF_DFIR1[31] =0;
-dsp->RX1_CF_DFIR1[32] =218;
+dsp->RX1_CF_DFIR1[32] =435;
 dsp->RX1_CF_DFIR1[33] =0;
-dsp->RX1_CF_DFIR1[34] =237;
+dsp->RX1_CF_DFIR1[34] =475;
 dsp->RX1_CF_DFIR1[35] =0;
-dsp->RX1_CF_DFIR1[36] =-195;
+dsp->RX1_CF_DFIR1[36] =-389;
 dsp->RX1_CF_DFIR1[37] =0;
-dsp->RX1_CF_DFIR1[38] =-440;
+dsp->RX1_CF_DFIR1[38] =-879;
 dsp->RX1_CF_DFIR1[39] =0;
-dsp->RX1_CF_DFIR1[40] =55;
+dsp->RX1_CF_DFIR1[40] =111;
 dsp->RX1_CF_DFIR1[41] =0;
-dsp->RX1_CF_DFIR1[42] =653;
+dsp->RX1_CF_DFIR1[42] =1307;
 dsp->RX1_CF_DFIR1[43] =0;
-dsp->RX1_CF_DFIR1[44] =252;
+dsp->RX1_CF_DFIR1[44] =504;
 dsp->RX1_CF_DFIR1[45] =0;
-dsp->RX1_CF_DFIR1[46] =-805;
+dsp->RX1_CF_DFIR1[46] =-1610;
 dsp->RX1_CF_DFIR1[47] =0;
-dsp->RX1_CF_DFIR1[48] =-773;
+dsp->RX1_CF_DFIR1[48] =-1547;
 dsp->RX1_CF_DFIR1[49] =0;
-dsp->RX1_CF_DFIR1[50] =779;
+dsp->RX1_CF_DFIR1[50] =1558;
 dsp->RX1_CF_DFIR1[51] =0;
-dsp->RX1_CF_DFIR1[52] =1570;
+dsp->RX1_CF_DFIR1[52] =3139;
 dsp->RX1_CF_DFIR1[53] =0;
-dsp->RX1_CF_DFIR1[54] =-377;
+dsp->RX1_CF_DFIR1[54] =-753;
 dsp->RX1_CF_DFIR1[55] =0;
-dsp->RX1_CF_DFIR1[56] =-2847;
+dsp->RX1_CF_DFIR1[56] =-5695;
 dsp->RX1_CF_DFIR1[57] =0;
-dsp->RX1_CF_DFIR1[58] =-1014;
+dsp->RX1_CF_DFIR1[58] =-2028;
 dsp->RX1_CF_DFIR1[59] =0;
-dsp->RX1_CF_DFIR1[60] =6165;
+dsp->RX1_CF_DFIR1[60] =12330;
 dsp->RX1_CF_DFIR1[61] =0;
-dsp->RX1_CF_DFIR1[62] =13083;
+dsp->RX1_CF_DFIR1[62] =26166;
 dsp->RX1_CF_DFIR1[63] =0;
-
-
 
 for (i=0;i<64;i++) dsp->RX2_CF_DFIR1[i] = dsp->RX1_CF_DFIR1[i];
 for (i=0;i<64;i++) dsp->RX3_CF_DFIR1[i] = dsp->RX1_CF_DFIR1[i];
@@ -681,68 +679,67 @@ for (i=0;i<64;i++) dsp->RX4_CF_DFIR1[i] = dsp->RX1_CF_DFIR1[i];
 //			половине значения центрального коэффициента.
 //				Нечетные регистры зарезервированы для расширения разрядности коэффициентов.
 
-
-dsp->RX1_CF_DFIR2[0]  =68;
+dsp->RX1_CF_DFIR2[0]  =55;
 dsp->RX1_CF_DFIR2[1]  =0;
-dsp->RX1_CF_DFIR2[2]  =-64;
+dsp->RX1_CF_DFIR2[2]  =-66;
 dsp->RX1_CF_DFIR2[3]  =0;
-dsp->RX1_CF_DFIR2[4]  =45;
+dsp->RX1_CF_DFIR2[4]  =80;
 dsp->RX1_CF_DFIR2[5]  =0;
-dsp->RX1_CF_DFIR2[6]  =-9;
+dsp->RX1_CF_DFIR2[6]  =-100;
 dsp->RX1_CF_DFIR2[7]  =0;
-dsp->RX1_CF_DFIR2[8]  =-44;
+dsp->RX1_CF_DFIR2[8]  =126;
 dsp->RX1_CF_DFIR2[9]  =0;
-dsp->RX1_CF_DFIR2[10]  =108;
+dsp->RX1_CF_DFIR2[10]  =-158;
 dsp->RX1_CF_DFIR2[11]  =0;
-dsp->RX1_CF_DFIR2[12]  =-165;
+dsp->RX1_CF_DFIR2[12]  =195;
 dsp->RX1_CF_DFIR2[13]  =0;
-dsp->RX1_CF_DFIR2[14]  =193;
+dsp->RX1_CF_DFIR2[14]  =-238;
 dsp->RX1_CF_DFIR2[15]  =0;
-dsp->RX1_CF_DFIR2[16]  =-167;
+dsp->RX1_CF_DFIR2[16]  =283;
 dsp->RX1_CF_DFIR2[17]  =0;
-dsp->RX1_CF_DFIR2[18]  =70;
+dsp->RX1_CF_DFIR2[18]  =-330;
 dsp->RX1_CF_DFIR2[19]  =0;
-dsp->RX1_CF_DFIR2[20]  =95;
+dsp->RX1_CF_DFIR2[20]  =376;
 dsp->RX1_CF_DFIR2[21]  =0;
-dsp->RX1_CF_DFIR2[22]  =-299;
+dsp->RX1_CF_DFIR2[22]  =-416;
 dsp->RX1_CF_DFIR2[23]  =0;
-dsp->RX1_CF_DFIR2[24]  =486;
+dsp->RX1_CF_DFIR2[24]  =446;
 dsp->RX1_CF_DFIR2[25]  =0;
-dsp->RX1_CF_DFIR2[26]  =-587;
+dsp->RX1_CF_DFIR2[26]  =-463;
 dsp->RX1_CF_DFIR2[27]  =0;
-dsp->RX1_CF_DFIR2[28]  =536;
+dsp->RX1_CF_DFIR2[28]  =459;
 dsp->RX1_CF_DFIR2[29]  =0;
-dsp->RX1_CF_DFIR2[30]  =-294;
+dsp->RX1_CF_DFIR2[30]  =-430;
 dsp->RX1_CF_DFIR2[31]  =0;
-dsp->RX1_CF_DFIR2[32]  =-127;
+dsp->RX1_CF_DFIR2[32]  =370;
 dsp->RX1_CF_DFIR2[33]  =0;
-dsp->RX1_CF_DFIR2[34]  =653;
+dsp->RX1_CF_DFIR2[34]  =-270;
 dsp->RX1_CF_DFIR2[35]  =0;
-dsp->RX1_CF_DFIR2[36]  =-1152;
+dsp->RX1_CF_DFIR2[36]  =123;
 dsp->RX1_CF_DFIR2[37]  =0;
-dsp->RX1_CF_DFIR2[38]  =1460;
+dsp->RX1_CF_DFIR2[38]  =78;
 dsp->RX1_CF_DFIR2[39]  =0;
-dsp->RX1_CF_DFIR2[40]  =-1417;
+dsp->RX1_CF_DFIR2[40]  =-343;
 dsp->RX1_CF_DFIR2[41]  =0;
-dsp->RX1_CF_DFIR2[42]  =922;
+dsp->RX1_CF_DFIR2[42]  =685;
 dsp->RX1_CF_DFIR2[43]  =0;
-dsp->RX1_CF_DFIR2[44]  =30;
+dsp->RX1_CF_DFIR2[44]  =-1117;
 dsp->RX1_CF_DFIR2[45]  =0;
-dsp->RX1_CF_DFIR2[46]  =-1310;
+dsp->RX1_CF_DFIR2[46]  =1659;
 dsp->RX1_CF_DFIR2[47]  =0;
-dsp->RX1_CF_DFIR2[48]  =2656;
+dsp->RX1_CF_DFIR2[48]  =-2341;
 dsp->RX1_CF_DFIR2[49]  =0;
-dsp->RX1_CF_DFIR2[50]  =-3692;
+dsp->RX1_CF_DFIR2[50]  =3207;
 dsp->RX1_CF_DFIR2[51]  =0;
-dsp->RX1_CF_DFIR2[52]  =3972;
+dsp->RX1_CF_DFIR2[52]  =-4331;
 dsp->RX1_CF_DFIR2[53]  =0;
-dsp->RX1_CF_DFIR2[54]  =-3020;
+dsp->RX1_CF_DFIR2[54]  =5851;
 dsp->RX1_CF_DFIR2[55]  =0;
-dsp->RX1_CF_DFIR2[56]  =326;
+dsp->RX1_CF_DFIR2[56]  =-8037;
 dsp->RX1_CF_DFIR2[57]  =0;
-dsp->RX1_CF_DFIR2[58]  =4817;
+dsp->RX1_CF_DFIR2[58]  =11506;
 dsp->RX1_CF_DFIR2[59]  =0;
-dsp->RX1_CF_DFIR2[60]  =-14031;
+dsp->RX1_CF_DFIR2[60]  =-17925;
 dsp->RX1_CF_DFIR2[61]  =0;
 dsp->RX1_CF_DFIR2[62]  =32767;
 dsp->RX1_CF_DFIR2[63]  =0;

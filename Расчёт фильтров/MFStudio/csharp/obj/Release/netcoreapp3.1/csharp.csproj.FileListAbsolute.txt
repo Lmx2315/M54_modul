@@ -1,0 +1,11 @@
+C:\Work\Project_M54\MFStudio\csharp\bin\Release\netcoreapp3.1\csharp.exe
+C:\Work\Project_M54\MFStudio\csharp\bin\Release\netcoreapp3.1\csharp.deps.json
+C:\Work\Project_M54\MFStudio\csharp\bin\Release\netcoreapp3.1\csharp.runtimeconfig.json
+C:\Work\Project_M54\MFStudio\csharp\bin\Release\netcoreapp3.1\csharp.runtimeconfig.dev.json
+C:\Work\Project_M54\MFStudio\csharp\bin\Release\netcoreapp3.1\csharp.dll
+C:\Work\Project_M54\MFStudio\csharp\bin\Release\netcoreapp3.1\csharp.pdb
+C:\Work\Project_M54\MFStudio\csharp\obj\Release\netcoreapp3.1\csharp.csprojAssemblyReference.cache
+C:\Work\Project_M54\MFStudio\csharp\obj\Release\netcoreapp3.1\csharp.AssemblyInfoInputs.cache
+C:\Work\Project_M54\MFStudio\csharp\obj\Release\netcoreapp3.1\csharp.AssemblyInfo.cs
+C:\Work\Project_M54\MFStudio\csharp\obj\Release\netcoreapp3.1\csharp.dll
+C:\Work\Project_M54\MFStudio\csharp\obj\Release\netcoreapp3.1\csharp.pdb
