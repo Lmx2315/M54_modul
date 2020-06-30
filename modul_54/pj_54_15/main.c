@@ -2917,9 +2917,6 @@ Delay_ms(100);
 Delay_ms(100);
 IO("~0 SW_init;");
 
-CSR_MFBSP1&=~(0x01);//выключаем LPORT  | чтобы выровнять приём из 1288
-CSR_MFBSP1|= (0x01);//включаем  LPORT
-
 /*
 IO("~0 init_1288:1;");
 IO("~0 init_1288:1;");
@@ -2933,7 +2930,11 @@ IO("~0 adc:1;");
  //  LED(1);
 
    IPWOFF(1);
-   u8 zzz=0;
+   u8 zzz=0;   
+Delay_ms(100);
+
+CSR_MFBSP1&=~(0x01);//выключаем LPORT  | чтобы выровнять приём из 1288
+CSR_MFBSP1|= (0x01);//включаем  LPORT
 
 Transf("--------------\r\n");
  while (1)
