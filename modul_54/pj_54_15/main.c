@@ -175,9 +175,12 @@ int SYS_timer1=0;
 int SYS_timer2=0;
 int Dtimer0=0;
 int SCH_SW=0;
-int FLAG_TEST=0;
+int FLAG_TEST =0; //выключен тест
 int UART_TIMER=0;
 
+u32 SYS_time=0;
+
+u8 ADR_SWR=0;
 u8 CHN=0;
 u8 Even_check=0;
 
@@ -194,7 +197,7 @@ unsigned int Flag_Timeout = 0;
 unsigned int Flag_Corr = 1; // флаг корректности работы теста (0 - корректно, 1 - не корректно)
 unsigned int Flag_Disconnect = 0;
 
-volatile unsigned int SWIC_Speed = 20;//1 - 5 Mбит , 2 - 10 Мбит,8 - 40 Мбит,40 - 200 Мбит, 0x50 - 400 Мбит/с
+volatile unsigned int SWIC_Speed = 60;//1 - 5 Mбит , 2 - 10 Мбит,8 - 40 Мбит,40 - 200 Мбит, 0x50 - 400 Мбит/с
 unsigned  int speed;
 unsigned  int SWIC_Number = 5;
 int errors=0;
@@ -910,7 +913,7 @@ unsigned int get_status(unsigned int port, bool print) {
   if (print) {
     switch (ds_state) {
       case link_status_err_reset:
-        report_high("Error Reset");
+ //     report_high("Error Reset");
         break;
       case link_status_err_wait:
         report_high("Error Wait");
@@ -925,7 +928,7 @@ unsigned int get_status(unsigned int port, bool print) {
         report_high("Connecting");
         break;
       case link_status_run:
-        report_high("Run");
+//      report_high("Run");
         break;
       default:
         report_high("Unknown Status");
@@ -2091,6 +2094,7 @@ void ID0_IT_handler ()
 	SYS_timer0++;
 	SYS_timer1++;
 	SYS_timer2++;
+	SYS_time++;
 }
 //---------------------------------
 
@@ -2341,7 +2345,7 @@ void dsp_1288hk1t_init (void)
 
  //--------------------------------------
 
-u_out("error=",error);
+u_out("program DSP 1288 error:",error);
 
 }
 /*
@@ -2503,13 +2507,13 @@ void SW_init (void)
   form_routing_table(false);
   gspwr_form_adg();
 
-  set_transmit_speed(port_spw0, 2, true);
-  set_transmit_speed(port_spw1, 2, true);
+  set_transmit_speed(port_spw0,2, true);
+  set_transmit_speed(port_spw1,2, true);
 
   set_recive_speed  (port_gigaspw2, gigasw_speed_125_mhz);
-  set_transmit_speed(port_gigaspw3, gigasw_speed_125_mhz, true);
-  set_recive_speed  (port_gigaspw3, gigasw_speed_125_mhz);
   set_transmit_speed(port_gigaspw2, gigasw_speed_125_mhz, true);
+  set_recive_speed  (port_gigaspw3, gigasw_speed_125_mhz);
+  set_transmit_speed(port_gigaspw3, gigasw_speed_125_mhz, true);
 
   REGS->SPW_MODE[port_gigaspw2] = SET_GIGASPWR_SPW_MODE_CODEC_LOOPBACK(REGS->SPW_MODE[port_gigaspw2], 1);
   REGS->SPW_MODE[port_gigaspw3] = SET_GIGASPWR_SPW_MODE_CODEC_LOOPBACK(REGS->SPW_MODE[port_gigaspw3], 1);
@@ -2517,17 +2521,17 @@ void SW_init (void)
   set_dma_enabled(true);
   set_work_enabled(true);
 
-  start_connect(port_spw0);
   start_connect(port_spw1);
-  start_connect(port_gigaspw2);
+  start_connect(port_spw0);
   start_connect(port_gigaspw3);
+  start_connect(port_gigaspw2);
 
   // Ожидание соединения
 Transf("wait spaceware\r\n");
-Delay_ms(300);
+Delay_ms(100);
 
   int port_i;
-  for (port_i = port_spw1; port_i <= port_spw0; port_i--)
+  for (port_i = port_spw0; port_i <= port_spw1; port_i++)
      if (SPW_SPEC_CABLE_PORTS & (1 << port_i))
         {
 			wait_link_status(port_i, link_status_run, 5000);
@@ -2538,7 +2542,7 @@ Delay_ms(300);
 
   speed = SWIC_Speed;
 
-Transf("stage 1\r\n");
+//Transf("stage 1\r\n");
 
   //,# Для Spw переход на рабочую скорость
   // Скорость передачи устанавливаем один раз
@@ -2546,9 +2550,9 @@ Transf("stage 1\r\n");
       if (SPW_SPEC_CABLE_PORTS & (1 << port_i))
           set_transmit_speed(port_i, speed, true);
 
-Delay_ms(200);
+Delay_ms(100);
 
-Transf("stage 2\r\n");
+//Transf("stage 2\r\n");
   //,# Ожидание разгона PLL
   for (port_i = port_spw0; port_i <= port_spw1; port_i++)
        if (SPW_SPEC_CABLE_PORTS & (1 << port_i))
@@ -2556,7 +2560,12 @@ Transf("stage 2\r\n");
 		   SYS_timer1=0;
           while (get_rx_speed(port_i) < speed - 3)
 		  {
-			 if (SYS_timer1>2000) {Transf("ERROR SPEED wait!!!\r\n");break;}
+			 if (SYS_timer1>100) 
+			 {
+				 un_out("Link:",port_i);
+				 Transf(" ERROR SPEED wait!!!\r\n");				 
+				 break;
+				}
 		  };
          //,# Проверка, что соединение не разорвалось
          errors += check_SpW_link_status_run((GIGASPWR_cl*)0, port_i);
@@ -2564,10 +2573,14 @@ Transf("stage 2\r\n");
 
 Delay_ms(100);
 
- if ((get_status(port_spw0,true)==link_status_run)&&
+ if  (get_status(port_spw0,true)==link_status_run) ADR_SWR=ADR_SWR|1;
+ if  (get_status(port_spw1,true)==link_status_run) ADR_SWR=ADR_SWR|2;
+
+ if ((get_status(port_spw0,true)==link_status_run)||
      (get_status(port_spw1,true)==link_status_run))
 	 {
 		 Transf("соединение установлено!!!\r\n");
+		 u_out("ADR_SWR:",ADR_SWR);
 		 FLAG_STATUS_SPACEWIRE=1;
 	 } else FLAG_STATUS_SPACEWIRE=0;
 
@@ -2576,7 +2589,7 @@ Delay_ms(100);
   if (errors)
       {
       Flag_Corr = 1; // соединение разорвалось
-	  Transf("соединение разорвалось\r\n");
+	  //Transf("соединение разорвалось\r\n");
 	  //IO("~0 SW_init;");  //--опасно!!! не включать ато петля!!!
       //asm volatile("break 0x0, 0x1");
       }
@@ -2592,25 +2605,29 @@ u32 sw_data_obmen (u32 a)
   u32 error=0;
   u32 var=0;
   u32 *next;
+  int route=0;
 
 //next=lport_InputArray+1023;//указатель на продолжение массива
 //next=lport_InputArray;//указатель на продолжение массива
 
   MASKR0_set();
 
-   swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
-// swic_receiver_run(route_mask_spw1, InputArray1, descr1, 0xFFFF);
+//  if (a==0) swic_receiver_run(route_mask_spw0, InputArray0, descr0, 0xFFFF);
+//  if (a==1) swic_receiver_run(route_mask_spw0, InputArray1, descr1, 0xFFFF);
 
-//if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
-//if (a==1) swic_send_packet(route_mask_spw1, OutputArray1    , size, 1);
+//	route = route_mask_spw0|route_mask_spw1;
+//	route = route_mask_spw0;
+	
+	if (ADR_SWR&1) route = route_mask_spw0; else
+	if (ADR_SWR&2) route = route_mask_spw1;
 
-	if (a==0) swic_send_packet(route_mask_spw0, OutputArray0    , size, 1);
-	if (a==1) swic_send_packet(route_mask_spw0, OutputArray1    , size, 1);
+	if (a==0) swic_send_packet(route, OutputArray0, size, 1);
+	if (a==1) swic_send_packet(route, OutputArray1, size, 1);
 
-//swic_receiver_wait(1);
-//swic_receiver_wait(0);
-
- if ((get_status(port_spw0,false)!=link_status_run)||
+//  if (a==0) swic_receiver_wait(0);
+//  if (a==1) swic_receiver_wait(0);
+ 
+ if ((get_status(port_spw0,false)!=link_status_run)&&
      (get_status(port_spw1,false)!=link_status_run))
 	 {
 		 FLAG_STATUS_SPACEWIRE=0;
@@ -2630,7 +2647,6 @@ void lPORT_DMA (void)
     CSR_MFBSP_RX_CH1 = (((ARRAY_LEN_lport/2)-1)<<16) | // WCX = LEN/2
                                              (3<< 2) | // WN = 0 (размер пачки - 1 слово)
 													1; // RUN = 1
-
 }
 
 int test_sin(u32 i)
@@ -2803,7 +2819,7 @@ void error_pin ()
 void main()
 {
 char temp_z0=0;
-
+u32 temp_var=0;
 u8 flag_SW_UP=0;
 u8 flag_SW_DW=0;
 
@@ -2842,7 +2858,8 @@ char readed;
 				 |(1 <<15) //Выбор источника тактовой частоты для работы MPORT:1 – PLL_MPORT;
 				 |(28<<16);//Коэффициент умножения/деления входной частоты PLL_DSP  (частота XTI, деленная на 2) :20 - 100 MHz
 
-   UART1_conf(115200,FREQ);
+   UART1_conf(115200,FREQ); 
+// UART0_conf(115200,FREQ);
 
    SetCP0_Status(0x1001);  // установка регистра Status на прерывание от DMA канала
    MASKR2_set();
@@ -2935,7 +2952,7 @@ Delay_ms(100);
 
 CSR_MFBSP1&=~(0x01);//выключаем LPORT  | чтобы выровнять приём из 1288
 CSR_MFBSP1|= (0x01);//включаем  LPORT
-
+SYS_timer2=0;
 Transf("--------------\r\n");
  while (1)
   {
@@ -2943,7 +2960,9 @@ Transf("--------------\r\n");
 	tx_uart();
 
 	if (UART_TIMER>100) IPWOFF(0);//слушаем RS485
-
+	
+	if (SYS_timer2>1000) {flag_SW_DW=0;SYS_timer2=0;}
+	
 	if (flag_DMA_LPORT>0)
 	{
 		flag_DMA_LPORT=0;
@@ -2952,13 +2971,13 @@ Transf("--------------\r\n");
 		sch_spaceware++;
 	};
 
-	if ((FLAG_SW_INT_DAT==1)&&(FLAG_SW_INT_DES==1))//(SYS_timer2>500)/
+	if ((FLAG_SW_INT_DAT==1)&&(FLAG_SW_INT_DES==1))//
 	{
 		FLAG_SW_INT_DAT=0;
 		FLAG_SW_INT_DES=0;
 		FLAG_SW_START=1;
 		sch_event++;
-		if (SCH_SW==2)	{lPORT_DMA ();}
+		if (SCH_SW==2)	{lPORT_DMA ();}  //.....выключили временно для отладки на плате элвиса
 	}
 
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(FLAG_DATA_PREP==0))
@@ -3003,8 +3022,9 @@ Transf("--------------\r\n");
 
 
 	if ((FLAG_STATUS_SPACEWIRE==1)&&(FLAG_SW_START==1)&&(FLAG_DATA_PREP==1)&&(SCH_SW<2))//
-	{
-	    sw_data_obmen(CHN);//CHN SCH_SW
+	{	
+//		Transf(".");
+	    sw_data_obmen(CHN);//тут начинаем отправлять данные через spaceware ! //CHN SCH_SW 
 		SCH_SW=2;
 		FLAG_SW_START =0;
 		if (CHN==0) CHN=1;else CHN=0;
@@ -3019,10 +3039,13 @@ Transf("--------------\r\n");
 
 	if ((FLAG_STATUS_SPACEWIRE==0)&&(flag_SW_DW==0))
 	{
+		un_out("\r\n[",SYS_time);
+		Transf("]\r\n");
 		Transf("SPACEWIRE DOWN!\r\n");
+		ADR_SWR=0;
 		flag_SW_DW=1;
 		flag_SW_UP=0;
-		IO("~0 SW_init;");
+		IO("~0 SW_init;");//перезапускаем каналы spaceware
 	}
 	error_pin ();
   }
