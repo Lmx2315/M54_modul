@@ -14,8 +14,8 @@
 
 #define XTIclk 5  //Mhz
 unsigned int txDescr [2]__attribute__ ((aligned(8))) = {0,};
-unsigned int txDescr0[2]__attribute__ ((aligned(8))) = {0,};
-unsigned int txDescr1[2]__attribute__ ((aligned(8))) = {0,};
+//unsigned int txDescr0[2]__attribute__ ((aligned(8))) = {0,};
+//unsigned int txDescr1[2]__attribute__ ((aligned(8))) = {0,};
 
 void ClearSwic(int id)
 {
