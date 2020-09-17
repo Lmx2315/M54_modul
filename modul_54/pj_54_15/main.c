@@ -1699,7 +1699,7 @@ void adc1_init (u8 a)
 		A1_PWRDN(0);
 
 		Delay_ms(10);
-		A1_SPLIN(1);
+		A1_SPLIN(1);//calrun
 		Delay_ms(100);
 		A1_SPLIN(0);
 		A1_CSB(0);
