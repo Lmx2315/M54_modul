@@ -13,3 +13,4 @@ srec_cat tfc11_swic.o -binary -o main.hex -intel //готовим прошивку  в формате h
 srec_cat z.hex -intel main.hex -intel -offset 0x800 -o x.hex -intel //сливаем загрузчик и прошивку , смещая прошивку на адрес 0х800
 
 Зашиваем во флеш файл x.hex с нулевого адреса 
+у нас тоит флеш 1636PP3У
